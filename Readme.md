@@ -1,12 +1,8 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Рустем Асфандияров](https://up.htmlacademy.ru/htmlcss/32/user/1848169).
-<<<<<<< HEAD
 * Наставник: [Ирина Малиновская](https://up.htmlacademy.ru/profession/frontender/12/htmlcss/tutors)
 
-=======
-* Наставник:  https://up.htmlacademy.ru/profession/frontender/12/htmlcss/tutors
->>>>>>> a5c9a349e46808ba4130928811fa16276f8060da
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
