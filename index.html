@@ -22,27 +22,17 @@
           <a class="navigation-link" href="#">Гостиницы</a>
         </li>
       </ul>
-
-      <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">Поиск</span>
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">В избранное</span>
-          </a>
-        </li>
-        <li class="navigation-item">
+    </nav>
+    <div class="navigation-list navigation-user">
+      <a class="navigation-link" href="#">
+        <span class="visually-hidden">Поиск</span>
+        <a class="navigation-link" href="#">
+          <span class="visually-hidden">В избранное</span>
           <a class="navigation-link" href="#">
             <span class="visually-hidden">Хочу сюда</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    </div>
   </header>
-
+  <!--Основная часть блока-->
   <main class="main-index">
     <h1 class="visually-hidden">SEDONA</h1>
     <!--Промо блок-->
@@ -57,36 +47,39 @@
       <ul class="advantages-list">
         <li class="advantages-item">
           <h4 class="advantages-title">Настоящий городок</h4>
-          <p class="advantages-text">— №1 —</p>
+          <span class="advantages-text">— №1 —</span>
           <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img class="logo-advantages" src="#" alt="Логотип жилья">
+        </li>
+        <li class="advantages-item">
           <h4 class="advantages-title">Жилье</h4>
           <p class="advantages-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          <img class="logo-advantages" src="#" alt="Логотип еды">
+        </li>
+        <li class="advantages-item">
           <h4 class="advantages-title">Еда</h4>
           <p class="advantages-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-          <img class="logo-advantages" src="#" alt="Логотип сувениров">
+        </li>
+        <li class="advantages-item">
           <h4 class="advantages-title">Сувениры</h4>
           <p class="advantages-text">Не только китайского, но и настоящего местного производства!</p>
         </li>
         <li class="advantages-item">
           <h4 class="advantages-title">Там есть мост дьявола</h4>
-          <p class="advantages-text">— №2 —</p>
+          <span class="advantages-text">— №2 —</span>
           <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
         <li class="advantages-item">
           <h4 class="advantages-title">Небольшая площадь</h4>
-          <p class="advantages-text">— №3 —</p>
+          <span class="advantages-text">— №3 —</span>
           <p class="advantages-text">Все достопримечательности находятся очень близко</p>
         </li>
         <li class="advantages-item">
           <h4 class="advantages-title">Красивая дорога</h4>
-          <p class="advantages-text">— №4 —</p>
+          <span class="advantages-text">— №4 —</span>
           <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li class="advantages-item">
           <h4 class="advantages-title">Мало туристов</h4>
-          <p class="advantages-text">— №5 —</p>
+          <span class="advantages-text">— №5 —</span>
           <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
@@ -103,7 +96,7 @@
   <footer class="page-footer">
     <!--Создаем подвал главной страницы-->
     <section class="newsletter">
-      <h2 class="newsletter-footer">Подпишитесь на рассылку</h2>
+      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
       <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <!--Создаем форму для подписки-->
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
