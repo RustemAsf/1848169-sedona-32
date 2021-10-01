@@ -44,20 +44,20 @@
     <section class="hotels-parametrs">
       <h2 class="visually-hidden">Параметры гостиницы</h2>
       <form class="parametrs-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <!--Создание чекбокса Инфраструктура-->
         <fieldset class="paramets-filter-group">
-          <!--Группировка нескольких элементов-->
           <legend class="parametrs-filter-title">Инфраструктура</legend>
           <ul class="parametrs-filter-list">
             <li class="parametrs-filter-item">
               <label class="control">
-                <input class="visually-hidden control-input" type="checkbox" name="pool">
+                <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
                 <span class="control-mark"></span>
                 <span class="control-label">Бассейн</span>
               </label>
             </li>
             <li class="parametrs-filter-item">
               <label class="control">
-                <input class="visually-hidden control-input" type="checkbox" name="parking">
+                <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
                 <span class="control-mark"></span>
                 <span class="control-label">Парковка</span>
               </label>
@@ -70,30 +70,60 @@
               </label>
             </li>
           </ul>
-          <!--Заголовок группы из нескольких элементов-->
-          <fieldset class="parametrs-filter-group">
-            <legend class="parametrs-filter-title">Тип жилья</legend>
-            <fieldset class="parametrs-filter-group">
-              <legend class="parametrs-filter-title">Стоимость, Р:</legend>
-              <button class="range-toggle toggle-min" type="button">
-                <!--Кнопка управления левым ползунком-->
-                <span class="visually-hidden">Изменить минимальную цену.</span>
-              </button>
-              <label class="parametrs-filter-label">
-                от<input class="parametrs-filter-input" type="number" name="min-price">
+        </fieldset>
+        <!--Создание чекбокса Тип жилья-->
+        <fieldset class="paramets-filter-group">
+          <legend class="parametrs-filter-title">Тип жилья</legend>
+          <ul class="parametrs-filter-list">
+            <li class="parametrs-filter-item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="pool" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Гостиница</span>
               </label>
-              <!--Кнопка управления правым ползунком-->
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену.</span>
-              </button>
-              <label class="parametrs-filter-label">
-                до<input class="parametrs-filter-input" type="number" name="max-price">
+            </li>
+            <li class="parametrs-filter-item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="parking">
+                <span class="control-mark"></span>
+                <span class="control-label">Мотель</span>
               </label>
-
-            </fieldset>
-
+            </li>
+            <li class="parametrs-filter-item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="parking">
+                <span class="control-mark"></span>
+                <span class="control-label">Аппартаменты</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="parametrs-filter-group">
+          <legend class="parametrs-filter-title">Стоимость, ₽:</legend>
+          <button class="range-toggle toggle-min" type="button">
+            <!--Кнопка управления левым ползунком-->
+            <span class="visually-hidden">Изменить минимальную цену</span>
+          </button>
+          <label class="parametrs-filter-label">
+            от<input class="parametrs-filter-input" type="number" name="min-price">
+          </label>
+          <!--Кнопка управления правым ползунком-->
+          <button class="range-toggle toggle-max" type="button">
+            <span class="visually-hidden">Изменить максимальную цену</span>
+          </button>
+          <label class="parametrs-filter-label">
+            до<input class="parametrs-filter-input" type="number" name="max-price">
+          </label>
+        </fieldset>
+        <button class="button" type="submit">Применить</button>
+        <button class="button" type="submit">Сбросить</button>
+      </form>
     </section>
-
+    <!--Создание секции результаты поиска-->
+    <section class="search result">
+      <h2 class="search-hidden">Результаты поиска</h2>
+      <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
+    </section>
 
 
 
