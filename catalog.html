@@ -121,18 +121,96 @@
     </section>
     <!--Создание секции результаты поиска-->
     <section class="search result">
-      <h2 class="search-hidden">Результаты поиска</h2>
-      <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
+      <h2 class="result-hidden-title">Найдено гостиниц:38</h2>
+      <form class="sorting-type">
+        <label class="visually-hidden" for="sorting">Сортировка</label>
+        <select class="select-control" id="sorting" name="sorting">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+        </select>
+        <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+      </form>
+      <a href="#" class="button button-light">
+        <span class="visually-hidden">Показать карточки</span>
+      </a>
+      <a href="#" class="button button-light">
+        <span class="visually-hidden">Показать плитку</span>
+      </a>
+      <a href="#" class="button">
+        <span class="visually-hidden">Показать список</span>
+      </a>
+      <!--Создаем список результатов поиска гостиницы-->
+      <ul class="hotels-list">
+        <li class="hotels-item">
+          <h3 class="hotels-title">Amara Resort & Spa</h3>
+          <span class="hotels-text">Гостиница</span>
+          <span class="hotels-text">от 4000 ₽</p>
+            <button class="button-gray" type="submit">Подробнее</button>
+            <button class="button-blue" type="submit">В избранное</button>
+            <span class="hotels-text">Рейтинг: 8,5 </p>
+        </li>
+        <li class="hotels-item">
+          <h3 class="hotels-title">Desert Quail Inn</h3>
+          <span class="hotels-text">Мотель</span>
+          <span class="hotels-text">от 3000 ₽</p>
+            <button class="button-gray" type="submit">Подробнее</button>
+            <button class="button-blue" type="submit">В избранное</button>
+            <span class="hotels-text">Рейтинг: 8,9 </p>
+        </li>
+        <li class="hotels-item">
+          <h3 class="hotels-title">Villas at Poco Diablo</h3>
+          <span class="hotels-text">Апартаменты</span>
+          <span class="hotels-text">от 2000 ₽</p>
+            <button class="button-gray" type="submit">Подробнее</button>
+            <button class="button-blue" type="submit">В избранное</button>
+            <span class="hotels-text">Рейтинг: 9,2 </p>
+        </li>
+        <li class="hotels-item">
+          <h3 class="hotels-title">GreenTree Inn</h3>
+          <span class="hotels-text">Гостиница</span>
+          <span class="hotels-text">от 3000 ₽</p>
+            <button class="button-gray" type="submit">Подробнее</button>
+            <button class="button-blue" type="submit">В избранное</button>
+            <span class="hotels-text">Рейтинг: 9,2 </p>
+        </li>
+      </ul>
+      <button class="button download-blue" type="button">Загрузить ещё</button>
+      <!--Создаем разбивку на страницы-->
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">...</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">10</a>
+        </li>
+      </ul>
+      <!--Сортировочный список кол-во гостиниц на странице-->
+      <div class="number-hotels">
+          <span class="number-text">Гостиниц на странице:</span>
+          <form class="number-sorting-type">
+            <label class="visually-hidden" for="sorting">Сортировка</label>
+            <select class="select-control" id="sorting" name="sorting">
+              <option value="four">4</option>
+              <option value="three">3</option>
+              <option value="two">2</option>
+              <option value="one">1</option>
+            </select>
+          </div>
     </section>
-
-
-
-
   </main>
-
-
-
-
   <footer class="page-footer">
     <!--Создаем подвал главной страницы-->
     <section class="newsletter">
