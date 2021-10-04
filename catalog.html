@@ -39,7 +39,14 @@
   <main class="main-inner">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
-      <a class="inner-link" href="index.html">Гостиницы</a>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="#"></a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">Гостиницы</a>
+        </li>
+      </ul>
     </header>
     <section class="hotels-parametrs">
       <h2 class="visually-hidden">Параметры гостиницы</h2>
@@ -121,7 +128,8 @@
     </section>
     <!--Создание секции результаты поиска-->
     <section class="search result">
-      <h2 class="result-heading-title">Найдено гостиниц:38</h2><!--Заголовок ли это????-->
+      <h2 class="result-heading-title">Найдено гостиниц:38</h2>
+      <!--Заголовок ли это????-->
       <form class="sorting-type">
         <label class="visually-hidden" for="sorting">Сортировка</label>
         <select class="select-control" id="sorting" name="sorting">
@@ -143,36 +151,95 @@
       <!--Создаем список результатов поиска гостиницы-->
       <ul class="hotels-list">
         <li class="hotels-item">
-          <h3 class="hotels-title">Amara Resort & Spa</h3>
-          <span class="hotels-text">Гостиница</span>
-          <span class="hotels-text">от 4000 ₽</span>
-          <button class="button-gray" type="submit">Подробнее</button>
-          <button class="button-blue" type="submit">В избранное</button>
-          <span class="hotels-text">Рейтинг: 8,5 </span>
-        </li>
-        <li class="hotels-item">
-          <h3 class="hotels-title">Desert Quail Inn</h3>
-          <span class="hotels-text">Мотель</span>
-          <span class="hotels-text">от 3000 ₽</p>
+          <div class="img-amara-resort">
+            <img class="resort-image" src="#" alt="">
+          </div>
+          <div class="amara-resort-card">
+            <h3 class="hotels-title">Amara Resort & Spa</h3>
+            <span class="hotels-text">Гостиница</span>
+            <span class="hotels-text">от 4000 ₽</span>
             <button class="button-gray" type="submit">Подробнее</button>
             <button class="button-blue" type="submit">В избранное</button>
-            <span class="hotels-text">Рейтинг: 8,9 </span>
+          </div>
+          <div class="amara-resort-rating">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item">
+                <span class="breadcrumbs-stars"></span>
+              </li>
+              <li class="breadcrumbs-item">
+                <span class="breadcrumbs-text">Рейтинг: 8,5 </span>
+              </li>
+            </ul>
+          </div>
         </li>
+
         <li class="hotels-item">
-          <h3 class="hotels-title">Villas at Poco Diablo</h3>
-          <span class="hotels-text">Апартаменты</span>
-          <span class="hotels-text">от 2000 ₽</span>
-          <button class="button-gray" type="submit">Подробнее</button>
-          <button class="button-green" type="submit">В избранном</button>
-          <span class="hotels-text">Рейтинг: 9,2 </span>
+          <div class="img-desert-quail-inn">
+            <img class="resort-image" src="#" alt="">
+          </div>
+          <div class="desert-quail-card">
+            <h3 class="hotels-title">Desert Quail Inn</h3>
+            <span class="hotels-text">Мотель</span>
+            <span class="hotels-text">от 3000 ₽</p>
+              <button class="button-gray" type="submit">Подробнее</button>
+              <button class="button-blue" type="submit">В избранное</button>
+          </div>
+          <div class="desert-quail-rating">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item">
+                <span class="breadcrumbs-stars"></span>
+              </li>
+              <li class="breadcrumbs-item">
+                <span class="breadcrumbs-text">Рейтинг: 8,9 </span>
+              </li>
+            </ul>
+          </div>
         </li>
+
         <li class="hotels-item">
-          <h3 class="hotels-title">GreenTree Inn</h3>
-          <span class="hotels-text">Гостиница</span>
-          <span class="hotels-text">от 3000 ₽</span>
-          <button class="button-gray" type="submit">Подробнее</button>
-          <button class="button-blue" type="submit">В избранное</button>
-          <span class="hotels-text">Рейтинг: 9,2 </span>
+          <div class="img-villas-poco">
+            <img class="resort-image" src="#" alt="">
+          </div>
+          <div class="villas-poco-card">
+            <h3 class="hotels-title">Villas at Poco Diablo</h3>
+            <span class="hotels-text">Апартаменты</span>
+            <span class="hotels-text">от 2000 ₽</span>
+            <button class="button-gray" type="submit">Подробнее</button>
+            <button class="button-green" type="submit">В избранном</button>
+          </div>
+          <div class="villas-poco-rating">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item">
+                <span class="breadcrumbs-stars"></span>
+              </li>
+              <li class="breadcrumbs-item">
+                <span class="breadcrumbs-text">Рейтинг: 9,2</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="hotels-item">
+          <div class="img-green-tree">
+            <img class="resort-image" src="#" alt="">
+          </div>
+          <div class="green-tree-card">
+            <h3 class="hotels-title">GreenTree Inn</h3>
+            <span class="hotels-text">Гостиница</span>
+            <span class="hotels-text">от 3000 ₽</span>
+            <button class="button-gray" type="submit">Подробнее</button>
+            <button class="button-blue" type="submit">В избранное</button>
+          </div>
+          <div class="green-tree-rating">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item">
+                <span class="breadcrumbs-stars"></span>
+              </li>
+              <li class="breadcrumbs-item">
+                <span class="breadcrumbs-text">Рейтинг: 9,2</span>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
       <button class="button download" type="button">Загрузить ещё</button>
