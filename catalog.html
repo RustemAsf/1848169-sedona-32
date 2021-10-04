@@ -41,10 +41,10 @@
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="#"></a>
+          <a class="visually-hidden" href="#">Главная</a>
         </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Гостиницы</a>
+        <li class="breadcrumbs-item"> 
+        <span class="breadcrumbs-text">Гостиницы</span>
         </li>
       </ul>
     </header>
@@ -52,7 +52,7 @@
       <h2 class="visually-hidden">Параметры гостиницы</h2>
       <form class="parametrs-filter" action="https://echo.htmlacademy.ru/" method="get">
         <!--Создание чекбокса Инфраструктура-->
-        <fieldset class="paramets-filter-group">
+        <fieldset class="parametrs-filter-group">
           <legend class="parametrs-filter-title">Инфраструктура</legend>
           <ul class="parametrs-filter-list">
             <li class="parametrs-filter-item">
@@ -79,7 +79,7 @@
           </ul>
         </fieldset>
         <!--Создание чекбокса Тип жилья-->
-        <fieldset class="paramets-filter-group">
+        <fieldset class="parametrs-filter-group">
           <legend class="parametrs-filter-title">Тип жилья</legend>
           <ul class="parametrs-filter-list">
             <li class="parametrs-filter-item">
@@ -127,9 +127,8 @@
       </form>
     </section>
     <!--Создание секции результаты поиска-->
-    <section class="search result">
+    <section class="search-result">
       <h2 class="result-heading-title">Найдено гостиниц:38</h2>
-      <!--Заголовок ли это????-->
       <form class="sorting-type">
         <label class="visually-hidden" for="sorting">Сортировка</label>
         <select class="select-control" id="sorting" name="sorting">
@@ -151,98 +150,114 @@
       <!--Создаем список результатов поиска гостиницы-->
       <ul class="hotels-list">
         <li class="hotels-item">
-          <div class="img-amara-resort">
-            <img class="resort-image" src="#" alt="">
+          <div class="hotels-img">
+            <img class="amara-image" src="#" alt="">
           </div>
-          <div class="amara-resort-card">
+          <div class="hotels-card">
             <h3 class="hotels-title">Amara Resort & Spa</h3>
             <span class="hotels-text">Гостиница</span>
             <span class="hotels-text">от 4000 ₽</span>
             <button class="button-gray" type="submit">Подробнее</button>
             <button class="button-blue" type="submit">В избранное</button>
           </div>
-          <div class="amara-resort-rating">
-            <ul class="breadcrumbs">
-              <li class="breadcrumbs-item">
-                <span class="breadcrumbs-stars"></span>
+          <div class="rating">
+            <ul class="rating-list">
+              <li class="rating-item">
+                <img class="rating-image" src="#" alt="">
               </li>
-              <li class="breadcrumbs-item">
-                <span class="breadcrumbs-text">Рейтинг: 8,5 </span>
+              <li class="rating-item">
+                <img class="rating-image" src="#" alt="">
+              </li>
+              <li class="rating-item">
+                <img class="rating-image" src="#" alt="">
+              </li>
+              <li class="rating-item">
+                <img class="rating-image" src="#" alt="">
               </li>
             </ul>
+            <span class="rating-text">Рейтинг: 8,5</span>
           </div>
         </li>
-
+      </ul>
+      <ul class="hotels-list">
         <li class="hotels-item">
-          <div class="img-desert-quail-inn">
-            <img class="resort-image" src="#" alt="">
+          <div class="hotels-img">
+            <img class="desert-image" src="#" alt="">
           </div>
-          <div class="desert-quail-card">
+          <div class="hotels-card">
             <h3 class="hotels-title">Desert Quail Inn</h3>
             <span class="hotels-text">Мотель</span>
-            <span class="hotels-text">от 3000 ₽</p>
+            <span class="hotels-text">от 3000 ₽</span>
               <button class="button-gray" type="submit">Подробнее</button>
               <button class="button-blue" type="submit">В избранное</button>
           </div>
-          <div class="desert-quail-rating">
-            <ul class="breadcrumbs">
-              <li class="breadcrumbs-item">
-                <span class="breadcrumbs-stars"></span>
+          <div class="rating">
+            <ul class="rating-list">
+              <li class="rating-item">
+                <img class="rating-image" src="#" alt="">
               </li>
-              <li class="breadcrumbs-item">
-                <span class="breadcrumbs-text">Рейтинг: 8,9 </span>
+              <li class="rating-item">
+                <img class="rating-image" src="#" alt="">
+              </li>
+              <li class="rating-item">
+                <img class="rating-image" src="#" alt="">
               </li>
             </ul>
+            <span class="rating-text">Рейтинг: 8,9</span>
           </div>
         </li>
-
+      </ul>
+      <ul class="hotels-list">
         <li class="hotels-item">
-          <div class="img-villas-poco">
-            <img class="resort-image" src="#" alt="">
+          <div class="hotels-img">
+            <img class="villas-image" src="#" alt="">
           </div>
-          <div class="villas-poco-card">
+          <div class="hotels-card">
             <h3 class="hotels-title">Villas at Poco Diablo</h3>
             <span class="hotels-text">Апартаменты</span>
             <span class="hotels-text">от 2000 ₽</span>
             <button class="button-gray" type="submit">Подробнее</button>
             <button class="button-green" type="submit">В избранном</button>
           </div>
-          <div class="villas-poco-rating">
-            <ul class="breadcrumbs">
-              <li class="breadcrumbs-item">
-                <span class="breadcrumbs-stars"></span>
+          <div class="rating">
+            <ul class="rating-list">
+              <li class="rating-item">
+                <img class="rating-image" src="#" alt="">
               </li>
-              <li class="breadcrumbs-item">
-                <span class="breadcrumbs-text">Рейтинг: 9,2</span>
+              <li class="rating-item">
+                <img class="rating-image" src="#" alt="">
               </li>
             </ul>
+            <span class="rating-text">Рейтинг: 9,2</span>
           </div>
         </li>
-
+      </ul>
+      <ul class="hotels-list">
         <li class="hotels-item">
-          <div class="img-green-tree">
-            <img class="resort-image" src="#" alt="">
+          <div class="hotels-img">
+            <img class="green-image" src="#" alt="">
           </div>
-          <div class="green-tree-card">
+          <div class="hotels-card">
             <h3 class="hotels-title">GreenTree Inn</h3>
             <span class="hotels-text">Гостиница</span>
             <span class="hotels-text">от 3000 ₽</span>
             <button class="button-gray" type="submit">Подробнее</button>
             <button class="button-blue" type="submit">В избранное</button>
           </div>
-          <div class="green-tree-rating">
-            <ul class="breadcrumbs">
-              <li class="breadcrumbs-item">
-                <span class="breadcrumbs-stars"></span>
+          <div class="rating">
+            <ul class="rating-list">
+              <li class="rating-item">
+                <img class="rating-image" src="#" alt="">
               </li>
-              <li class="breadcrumbs-item">
-                <span class="breadcrumbs-text">Рейтинг: 9,2</span>
+              <li class="rating-item">
+                <img class="rating-image" src="#" alt="">
               </li>
             </ul>
+            <span class="rating-text">Рейтинг: 9,2</span>
           </div>
         </li>
       </ul>
-      <button class="button download" type="button">Загрузить ещё</button>
+      <button class="button-upload" type="button">Загрузить ещё</button>
       <!--Создаем разбивку на страницы-->
       <ul class="pagination">
         <li class="pagination-item">
@@ -268,13 +283,14 @@
       <div class="number-hotels">
         <span class="number-text">Гостиниц на странице:</span>
         <form class="number-sorting-type">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select class="select-control" id="sorting" name="sorting">
+          <label class="visually-hidden" for="sorting-number">Сортировка</label>
+          <select class="select-control" id="sorting-number" name="sorting-number">
             <option value="four">4</option>
             <option value="three">3</option>
             <option value="two">2</option>
             <option value="one">1</option>
           </select>
+          </form>
       </div>
     </section>
   </main>
