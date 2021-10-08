@@ -38,5 +38,38 @@
     src: url("fonts/pt-sans-narrow-bold.woff2") format("woff2");
     font-display: swap;
   }
-        
+      /* Подключаем основной шрифт в Body */
+  body {
+    font-family: "PT Sans", sans-serif;
+    
+    font-size: 30px;
+    line-height: 36px;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+      /* Добавим фоновый цвет и цвет текста для шапки */
+
+.page-header {
+  color: #000000;
+  background: #FFFFFF;
+}
+
+.navigation-link {
+  font-family: "PT Sans Narrow", sans-serif; 
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase; 
+}
+
+.main-index {
+  color: #000000;
+  background-color: #FFFFFF;
+  background-image: url("../img/mountain.jpg"); 
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
