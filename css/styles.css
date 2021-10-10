@@ -22,7 +22,6 @@ body {
   background-color: #FFFFFF;
 }
 
-
 /* Pages */
 
 .page-header {
@@ -31,7 +30,7 @@ body {
 }
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif; 
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -40,7 +39,6 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .navigation-text {
@@ -52,7 +50,7 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000; /*Будет замена цвета*/
+  color: #FFFFFF; 
 }
 
 .main-index {
@@ -82,12 +80,37 @@ body {
   font-size: 22px;
   line-height: 36px;
   color: #333333;
-
 }
+
 /* List */
 .advantages-list {
   text-align: center;
 }
+.town {
+  background: #83B3D3;
+}
+.appartaments {
+  background: rgba(131, 179, 211, 0.12);
+}
+.food {
+  background: #FFFFFF;
+}
+.suvenire {
+  background: rgba(131, 179, 211, 0.12);
+}
+.bridge {
+  background: #83B3D3;
+}
+.square {
+  background: rgba(131, 179, 211, 0.12);
+}
+.road {
+  background: rgba(131, 179, 211, 0.2);
+}
+.tourist {
+  background: rgba(131, 179, 211, 0.12);
+}
+
 
 /* Title */
 .advantages-title {
@@ -98,7 +121,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #000000;/*Будет замена цвета на #FFFFFF*/
+  color: #FFFFFF;
 }
 
 .advantages-text {
@@ -108,11 +131,10 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
-  text-transform: uppercase;
-  color: #000000;/*Будет замена цвета на #FFFFFF*/
+  color: #FFFFFF;
 }
 
-.advantages-title-adv {
+.black {
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -123,7 +145,7 @@ body {
   color: #000000;
 }
 
-.advantages-text-adv {
+.gray {
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -154,7 +176,7 @@ body {
   color: #333333;
 }
 
-.button hotels-search {
+.button-hotels-search {
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -167,7 +189,7 @@ body {
 
 .page-footer {
   color: #FFFFFF;
-  background: #FFFFFF;
+  background: #8BABB8;
   background-image: url("../img/background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -191,7 +213,7 @@ body {
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
-  color: #FFFFFF;/*цвет?*/
+  color: #FFFFFF;
 }
 
 .button-newsletter-button {
@@ -205,7 +227,7 @@ body {
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  color: #000000;/*Будет замена цвета на #FFFFFF*/
+  color: #FFFFFF;
 }
 
 .contacts-phone {
@@ -277,7 +299,7 @@ body {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;/*Цвет будет заменен на #FFFFFF*/
+  color: #FFFFFF;
 }
 
 .button-dark {
@@ -287,7 +309,7 @@ body {
   font-size: 18px;
   line-height: 23px;
   text-align: center;
-  color: #000000;/*Цвет будет заменен на #FFFFFF*/
+  color: #FFFFFF;
 }
 
 .result-heading-title {
@@ -313,7 +335,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 24px;
   line-height: 31px;
   color: #000000;
 }
@@ -335,7 +357,7 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;/*Цвет будет заменен на #FFFFFF*/
+  color: #FFFFFF;
 }
 
 .button-green {
@@ -346,7 +368,7 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;/*Цвет будет заменен на #FFFFFF*/
+  color: #FFFFFF;
 }
 
 .rating-text {
@@ -370,7 +392,7 @@ body {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;/*Цвет будет заменен на #FFFFFF*/
+  color: #FFFFFF;
 }
 
 .pagination-link-pagination-current {
@@ -395,7 +417,7 @@ body {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #000000; /*Цвет будет заменен на #FFFFFF*/
+  color: #FFFFFF; 
   }
   
 .number-text {
@@ -416,7 +438,7 @@ body {
   color: #333333;
 }
 
-.newsletter-title {
+.newsletter-title-catalog {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -427,17 +449,12 @@ body {
   color: #000000;
 }
 
-.newsletter-text {
+.newsletter-text-catalog {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
-}
-
-.page-footer {
-  color: #FFFFFF;
-  background: #FFFFFF;
 }
