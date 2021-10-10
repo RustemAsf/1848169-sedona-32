@@ -32,9 +32,10 @@ body {
 
 .navigation-link {
   font-family: "PT Sans", sans-serif; 
+  font-style: normal;
+  font-weight: bold;
   font-size: 20px;
   line-height: 26px;
-  font-weight: bold;
   text-align: center;
   color: #000000;
   background-color: #FFFFFF;
@@ -42,6 +43,17 @@ body {
   text-transform: uppercase;
 }
 
+.navigation-text {
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000; /*Будет замена цвета*/
+}
 
 .main-index {
   color: #000000;
@@ -52,12 +64,12 @@ body {
 }
 
 .advantages-heading {
-  text-align: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
   text-transform: uppercase;
   color: #000000;
 }
@@ -86,6 +98,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  color: #000000;/*Будет замена цвета на #FFFFFF*/
 }
 
 .advantages-text {
@@ -96,6 +109,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
+  color: #000000;/*Будет замена цвета на #FFFFFF*/
 }
 
 .advantages-title-adv {
@@ -137,7 +151,6 @@ body {
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
-  text-transform: uppercase;
   color: #333333;
 }
 
@@ -164,11 +177,11 @@ body {
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 26px;
+  font-weight:bold;
+  font-size: 30px;
+  line-height: 36px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #FFFFFF; /*цвет?*/
 }
 
 .newsletter-text {
@@ -178,21 +191,21 @@ body {
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
-  text-transform: uppercase;
-  
+  color: #FFFFFF;/*цвет?*/
 }
 
-.button newsletter-button {
+.button-newsletter-button {
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  color: #000000;/*Будет замена цвета на #FFFFFF*/
 }
 
 .contacts-phone {
@@ -207,15 +220,6 @@ body {
 }
 
 /* Стилизуем каталог */
-
-
-body {
-  font-family: "PT Sans", sans-serif;
-  font-size: 30px;
-  line-height: 39px;
-  color: #000000;
-  background-color: #FFFFFF;
-}
 
 .main-inner {
   color: #FFFFFF;
@@ -273,7 +277,7 @@ body {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #000000;/*Цвет будет заменен на #FFFFFF*/
 }
 
 .button-dark {
@@ -283,7 +287,7 @@ body {
   font-size: 18px;
   line-height: 23px;
   text-align: center;
-  color: #FFFFFF;
+  color: #000000;/*Цвет будет заменен на #FFFFFF*/
 }
 
 .result-heading-title {
@@ -331,7 +335,7 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #000000;/*Цвет будет заменен на #FFFFFF*/
 }
 
 .button-green {
@@ -342,7 +346,7 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #000000;/*Цвет будет заменен на #FFFFFF*/
 }
 
 .rating-text {
@@ -366,9 +370,34 @@ body {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #000000;/*Цвет будет заменен на #FFFFFF*/
 }
 
+.pagination-link-pagination-current {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.pagination-link {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000; /*Цвет будет заменен на #FFFFFF*/
+  }
+  
 .number-text {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
