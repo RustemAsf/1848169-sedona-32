@@ -14,8 +14,16 @@ font-display: swap;
   font-display: swap;
 }
 
+/**Sticky-footer**/
+
+html {
+  height: 100%; /**Размер HTML тега равнялся размеру окна браузера**/
+}
 body {
   font-family: "PT Sans", sans-serif;
+  display: flex; /**Все элементы контейнера становятся flex элементами**/
+  flex-direction: column; /**Повернём ось, чтобы блоки располагались сверху вниз.**/
+  min-height: 100%; /**Выставим размер Body равным размеру тега HTML, который равен окну браузера**/
   font-size: 30px;
   line-height: 36px;
   color: #000000;
@@ -39,6 +47,10 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   text-decoration: none;
+}
+
+.main-container {
+  flex-grow: 1; /**Создали main container**/
 }
 
 .navigation-text {
