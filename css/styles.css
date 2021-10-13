@@ -14,16 +14,18 @@ font-display: swap;
   font-display: swap;
 }
 
-/**Sticky-footer**/
+/*Sticky-footer*/
 
 html {
-  height: 100%; /**Размер HTML тега равнялся размеру окна браузера**/
+  height: 100%; /*Размер HTML тега равнялся размеру окна браузера*/
 }
+
 body {
   font-family: "PT Sans", sans-serif;
   display: flex; /**Все элементы контейнера становятся flex элементами**/
   flex-direction: column; /**Повернём ось, чтобы блоки располагались сверху вниз.**/
   min-height: 100%; /**Выставим размер Body равным размеру тега HTML, который равен окну браузера**/
+  margin: 0; /*Убираем окантовку вокруг сайта*/
   font-size: 30px;
   line-height: 36px;
   color: #000000;
@@ -35,8 +37,29 @@ body {
 .page-header {
   color: #000000;
   background: #FFFFFF;
+  margin: 0 auto; /*Блок по центру от внешних границ*/
+  
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.navigation-list {
+  width: 430px;
+  margin: 0; /*Сброс отступов у ссылок навигации*/
+  padding: 0;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.navigation-user {
+  max-width: 333px; /*Запас на один элемент*/
+  margin-left: auto; /*Панель поиска в крайний правый угол */
+}
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -73,6 +96,15 @@ body {
   background-repeat: no-repeat;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto; /*Обернём контент сайта в контейнер, чтобы поставить контент по центру.*/
+}
+
+.logo-main {
+  display: block;
+  margin: 0 auto;
+}
 .advantages-heading {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
