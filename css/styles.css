@@ -50,10 +50,9 @@ body {
 
 .navigation-list {
   width: 430px;
-  margin: 0; /*Сброс отступов у ссылок навигации*/
+  margin: 0; 
   padding: 0;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+
 }
 
 .navigation-user {
@@ -94,18 +93,16 @@ body {
   background-image: url("../img/mountain.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
 
-.page-container {
-  width: 1200px;
-  margin: 0 auto; /*Обернём контент сайта в контейнер, чтобы поставить контент по центру.*/
 }
 
 .logo-main {
-  display: block;
-  margin: 0 auto;
+  display: block; /*Блочная модель*/
+  margin: 0 auto; /*Блок лого по центру*/
 }
 .advantages-heading {
+  width: 1200px;
+  margin: 0 auto;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -114,9 +111,12 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  
 }
 
 .advantages-subtitle {
+  width: 1200px;
+  margin: 0 auto;
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -126,9 +126,21 @@ body {
   color: #333333;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto; 
+}
 /* List */
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   text-align: center;
+}
+.advantages-item {
+width: 400px;
+height: 384px;
 }
 .town {
   background: #83B3D3;
@@ -199,6 +211,10 @@ body {
   color: #333333;
 }
 
+.hotels {
+  width: 1200px;
+}
+
 .hotels-heading {
   text-align: center;
   font-family: "PT Sans", sans-serif;
@@ -238,7 +254,19 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+.page-footer-container {
+display: flex;
+width: 1200px;
+flex-wrap: wrap;
+margin: 0 auto;
+}
 
+.newsletter {
+  width: 800px;
+  margin: 0 auto;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
 .newsletter-title {
   text-align: center;
   font-family: "PT Sans", sans-serif;
@@ -268,12 +296,24 @@ body {
   font-size: 20px;
   line-height: 26px;
   text-transform: uppercase;
-  display: flex;
   align-items: center;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.footer-social-list {
+  width: 107;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
 .contacts-phone {
   text-align: center;
   font-family: "PT Sans", sans-serif;
