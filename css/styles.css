@@ -20,14 +20,15 @@
 
   body {
     margin: 0;
-    display: flex;/*Флекс модель поведения*/
-    flex-direction: column; /*поворот по вертикали*/
-    min-height: 100%; /*Тег Body = размеру содержимого html*/
+    display: flex;
+    flex-direction: column; 
+    min-height: 100%; 
     font-family: "PT Sans", sans-serif;
     font-size: 30px;
     line-height: 36px;
     color: #000000;
     background-color: #FFFFFF;
+   
   }
   
   /* Pages */
@@ -47,13 +48,13 @@
   .navigation-list {
     width: 412px;
     margin: 0; /*Сброс ссылок навигации*/
-    padding: 0;
+    padding-left: 71px;
   }
 
   .navigation-user {
     width: 334px;
     margin-left: auto;
-
+    
   }
   .navigation-link {
     font-family: "PT Sans", sans-serif;
@@ -68,7 +69,7 @@
   }
   
   .main-container {
-    flex-grow: 1; /*Все элементы одинаковые*/
+    flex-grow: 1; 
   }
 
   .navigation-text {
@@ -96,9 +97,7 @@
   .page-container {
     width: 1200px; /*Создаем основной контейнер*/
     margin: 0 auto; /*Контент по центру*/
-
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+    
   }
 
   .logo-header {
@@ -141,13 +140,6 @@
     text-align: center;
     margin: 0;
     padding: 0;
-
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
-  }
-
-  .advantages-item {
-    /* width: 400px; */
   }
 
   .advantages-one-line { /*1-я строка преимуществ*/
@@ -293,8 +285,7 @@
     width: 1200px;
     margin: 0 auto;
 
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+    
   }
   .newsletter-block {
     width: 800px;
