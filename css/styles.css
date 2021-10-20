@@ -20,8 +20,8 @@
 
   body {
     margin: 0;
-    display: flex;/*Флекс модель поведения*/
-    flex-direction: column; /*поворот по вертикали*/
+    display: flex;
+    flex-direction: column; 
     min-height: 100%; /*Тег Body = размеру содержимого html*/
     font-family: "PT Sans", sans-serif;
     font-size: 30px;
@@ -47,12 +47,13 @@
   .navigation-list {
     width: 412px;
     margin: 0; /*Сброс ссылок навигации*/
-    padding: 0;
+    padding-left: 71px;
   }
 
   .navigation-user {
     width: 334px;
     margin-left: auto;
+    
 
   }
   .navigation-link {
@@ -147,64 +148,61 @@
   }
 
   .advantages-item {
-    width: 400px;
+    /* width: 400px; */
   }
 
-  .advantages-one {
+  .advantages-one-line { /*1-я строка преимуществ*/
     display: flex;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
   }
 
-  .advantages-two {
+  .advantages-one-block { 
+    width: 400px;
+    background: #83B3D3;
+  }
+
+  .advantages-two-line { /*2-я строка преимуществ*/
     display: flex;
     padding-left: 0px;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
   }
 
-  .advantages-three {
-    display: flex;
-
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
-  }
-
-  .advantages-four {
-    display: flex;
-
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
-  }
-
-  .advantages-main { 
-    display: flex;
-  }
-  .town {
-    background: #83B3D3;
-  }
-  .appartaments {
+  .advantages-two-block {
+    width: 400px;
     background: rgba(131, 179, 211, 0.12);
   }
-  .food {
+  .advantages-three-block {
+    width: 400px;
     background: #FFFFFF;
+
   }
-  .suvenire {
+  .advantages-four-block {
+    width: 400px;
     background: rgba(131, 179, 211, 0.12);
   }
-  .bridge {
+  .advantages-three-line { /*3-я строка преимуществ*/
+    display: flex;
+  }
+
+  .advantages-five-block {
+    width: 400px;
     background: #83B3D3;
   }
-  .square {
+
+  .advantages-four-line { /*4-я строка преимуществ*/
+    display: flex;
+    padding-left: 0px;
+  }
+  .advantages-six-block {
+    width: 400px;
     background: rgba(131, 179, 211, 0.12);
   }
-  .road {
+  .advantages-seven-block {
+    width: 400px;
     background: rgba(131, 179, 211, 0.2);
   }
-  .tourist {
+  .advantages-eight-block {
+    width: 400px;
     background: rgba(131, 179, 211, 0.12);
   }
-  
   
   /* Title */
   .advantages-title {
@@ -288,7 +286,34 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
-  
+
+  .page-footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+  }
+  .newsletter-block {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .newsletter-block-button {
+    margin: 0 auto;
+  }
+
+  .social-list-block {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+ 
+  }
   .newsletter-title {
     text-align: center;
     font-family: "PT Sans", sans-serif;
