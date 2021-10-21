@@ -25,6 +25,7 @@
     line-height: 36px;
     color: #000000;
     background-color: #FFFFFF;
+   
   }
   
   /* Pages */
@@ -64,7 +65,6 @@
     width: 334px;
     margin-left: auto;
     
-
   }
   .navigation-link {
     font-family: "PT Sans", sans-serif;
@@ -80,7 +80,7 @@
   
   .main-container {
     flex-grow: 1;
-  }
+ }
 
   .navigation-text {
     text-align: center;
@@ -104,7 +104,7 @@
   .promo {
     background-image: url("../img/mountain.jpg");
   }
-  
+
 
   .logo-header {
     display: block;
@@ -141,21 +141,13 @@
   /* List */
   .advantages-list {
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     text-align: center;
     margin: 0;
     padding: 0;
-
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
   }
 
-  .advantages-item {
-    /* width: 400px; */
-  }
-
-  .advantages-one-line { /*1-я строка преимуществ*/
+   .advantages-one-line { /*1-я строка преимуществ*/
     display: flex;
   }
 
@@ -298,8 +290,7 @@
     width: 1200px;
     margin: 0 auto;
 
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+
   }
   .newsletter-block {
     width: 800px;
