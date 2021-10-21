@@ -15,14 +15,11 @@
   }
   
   html {
-    height: 100%; /*Размер окна равен окну браузера*/
+    height: 100%; 
   }
 
   body {
-    margin: 0;
-    display: flex;
-    flex-direction: column; 
-    min-height: 100%; /*Тег Body = размеру содержимого html*/
+    height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 30px;
     line-height: 36px;
@@ -31,6 +28,19 @@
   }
   
   /* Pages */
+  .page-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 1200px; 
+    min-height: 100%;
+    background-color: #FFFFFF;
+    
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+  }
   
   .page-header {
     color: #000000;
@@ -69,7 +79,7 @@
   }
   
   .main-container {
-    flex-grow: 1; /*Все элементы одинаковые*/
+    flex-grow: 1;
   }
 
   .navigation-text {
@@ -94,13 +104,7 @@
   .promo {
     background-image: url("../img/mountain.jpg");
   }
-  .page-container {
-    width: 1200px; /*Создаем основной контейнер*/
-    margin: 0 auto; /*Контент по центру*/
-
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
-  }
+  
 
   .logo-header {
     display: block;
