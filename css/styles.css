@@ -92,8 +92,8 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF; 
-  }
-  
+  } 
+
   .main-index {
     color: #000000;
     background-color: #FFFFFF;
@@ -105,7 +105,6 @@
     background-image: url("../img/mountain.jpg");
   }
 
-
   .logo-header {
     display: block;
     margin: 0 auto;
@@ -116,7 +115,7 @@
     margin: 0 auto;
 
   }
-
+  
   .advantages-heading {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
