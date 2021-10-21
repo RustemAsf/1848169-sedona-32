@@ -15,14 +15,12 @@
   }
   
   html {
-    height: 100%; /*Размер окна равен окну браузера*/
+    height: 100%;
   }
 
   body {
-    margin: 0;
-    display: flex;
-    flex-direction: column; 
-    min-height: 100%; 
+  
+    height: 100%; 
     font-family: "PT Sans", sans-serif;
     font-size: 30px;
     line-height: 36px;
@@ -31,17 +29,26 @@
    
   }
   
-  /* Pages */
-  
   .page-header {
     color: #000000;
     background: #FFFFFF;
+  }
+  
+  .page-container {
+    box-sizing: border-box;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    width: 1200px; 
+    min-height: 100%;
+    background: #FFFFFF;
+    
   }
 
   .navigation {
     display: flex;
     width: 1200px;
-    margin: 0 auto; /*блок навигации по центру*/
+    margin: 0 auto; 
 
   }
 
@@ -94,11 +101,7 @@
   .promo {
     background-image: url("../img/mountain.jpg");
   }
-  .page-container {
-    width: 1200px; /*Создаем основной контейнер*/
-    margin: 0 auto; /*Контент по центру*/
-    
-  }
+  
 
   .logo-header {
     display: block;
@@ -132,10 +135,9 @@
     color: #333333;
   }
   
-  /* List */
+  
   .advantages-list {
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     text-align: center;
     margin: 0;
@@ -153,7 +155,6 @@
 
   .advantages-two-line { /*2-я строка преимуществ*/
     display: flex;
-    padding-left: 0px;
   }
 
   .advantages-two-block {
@@ -180,7 +181,6 @@
 
   .advantages-four-line { /*4-я строка преимуществ*/
     display: flex;
-    padding-left: 0px;
   }
   .advantages-six-block {
     width: 400px;
@@ -195,7 +195,6 @@
     background: rgba(131, 179, 211, 0.12);
   }
   
-  /* Title */
   .advantages-title {
     text-align: center;
     font-family: "PT Sans", sans-serif;
@@ -237,7 +236,10 @@
     line-height: 21px;
     color: #333333;
   }
-  
+  .hotels-order {
+    margin: 0 auto;
+    
+  }
   .hotels-heading {
     text-align: center;
     font-family: "PT Sans", sans-serif;
@@ -282,20 +284,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 1200px;
-    margin: 0 auto;
+    
+   
 
     
   }
   .newsletter-block {
     width: 800px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    
 
-  }
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    
 
-  .newsletter-block-button {
-    margin: 0 auto;
   }
 
   .social-list-block {
