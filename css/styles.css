@@ -41,7 +41,8 @@
     width: 1200px; 
     min-height: 100%;
     background: #FFFFFF;
-    
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
   }
 
   .navigation {
@@ -290,10 +291,6 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
-    
-
   }
 
   .social-list-block {
@@ -357,6 +354,12 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
+
+  .inner-block {
+    width: 528px;
+    padding-left: 71px;
+   
+  }
   
   .inner-header-title {
     text-align: center;
@@ -377,7 +380,29 @@
     color: #FFFFFF;
   
   }
+  .parametrs-filter {
+    width: 1057px;
+    display: flex;
+  }
+
+  .parametrs-filter-one {
+    width: 150px;
+    padding-left: 71px;
+    margin-right: 68px;
+    
+  }
+  .parametrs-filter-two {
+    width: 145px;
+    margin-right: 167px;
   
+  }
+  .parametrs-filter-three {
+    width: 287px;
+    margin-right: 81px;
+    
+  }
+  
+
   .parametrs-filter-title {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
@@ -418,8 +443,13 @@
     text-align: center;
     color: #FFFFFF;
   }
-  
+  .sorting-block {
+    display:flex;
+    
+  }
   .result-heading-title {
+    padding-left: 71px;
+    margin-right: 191px;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -428,7 +458,10 @@
     text-transform: uppercase;
     color: #000000;
   }
-  
+  .button-sorting {
+    width: 160px;
+    display: flex;
+  }
   .select-control {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
@@ -437,7 +470,50 @@
     line-height: 23px;
     color: #333333;
   }
-  
+  .hotels-card {
+    margin-left: 71px;
+    display: flex;
+    width: 1056px;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+  }
+.hotels-img {
+  margin-right: 36px;
+}
+  .hotels-block-one {
+    width: 319px;
+    margin-right: 361px;
+  }
+  .hotels-block-two {
+    width: 319px;
+    margin-right: 361px;
+  }
+  .hotels-block-three {
+    width: 319px;
+    margin-right: 361px;
+  }
+  .hotels-block-four {
+    width: 319px;
+    margin-right: 361px;
+  }
+
+  .button-upload {
+    margin: 0 auto;
+  }
+
+  .pagination-sorting {
+    display: flex;
+    width: 1056px;
+    margin-left: 71px;
+   
+  }
+  .pagination {
+    display: flex;
+    width: 369px;
+    margin-right: 301px;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+  }
   .hotels-title {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
