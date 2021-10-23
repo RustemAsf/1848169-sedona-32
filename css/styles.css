@@ -20,6 +20,7 @@
 
   body {
     height: 100%;
+    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-size: 30px;
     line-height: 36px;
@@ -31,6 +32,7 @@
   .page-header {
     color: #000000;
     background: #FFFFFF;
+    background-size: 100% auto;
   }
   
   .page-container {
@@ -93,9 +95,10 @@
 
   .main-index {
     color: #000000;
-    background-color: #FFFFFF;
     background-size: 100% auto;
     background-repeat: no-repeat;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
   }
 
   .promo {
@@ -279,6 +282,7 @@
     background-repeat: no-repeat;
   }
 
+  
   .page-footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -307,8 +311,10 @@
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
-    color: #FFFFFF; /*цвет?*/
+    color: #FFFFFF; 
   }
+
+  
   
   .newsletter-text {
     text-align: center;
@@ -349,7 +355,6 @@
   
   .main-inner {
     color: #FFFFFF;
-    background: #FFFFFF;
     background-image: url("../img/background.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -458,6 +463,36 @@
     text-transform: uppercase;
     color: #000000;
   }
+
+  .search-result {
+    background-size: #FFFFFF;
+  }
+
+  .newsletter {
+    background-size: #FFFFFF;
+  }
+
+  .newsletter-title-black {
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight:bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000; 
+  }
+
+  .newsletter-text-gray {
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333; 
+  }
+
   .button-sorting {
     width: 160px;
     display: flex;
@@ -474,8 +509,7 @@
     margin-left: 71px;
     display: flex;
     width: 1056px;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+ 
   }
 .hotels-img {
   margin-right: 36px;
@@ -511,8 +545,7 @@
     display: flex;
     width: 369px;
     margin-right: 301px;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+    
   }
   .hotels-title {
     font-family: "PT Sans", sans-serif;
@@ -612,6 +645,7 @@
     color: #333333;
   }
   
+
   .select-control {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
@@ -620,7 +654,11 @@
     line-height: 23px;
     color: #333333;
   }
-  
+  .page-white-footer {
+    background: #FFFFFF;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
   .newsletter-title-catalog {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
