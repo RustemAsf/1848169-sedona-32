@@ -59,7 +59,9 @@
     margin: 0; /*Сброс ссылок навигации*/
     padding-left: 71px;
   }
-
+.navigation-item {
+  display: inline;
+}
   .navigation-user {
     width: 334px;
     margin-left: auto;
@@ -359,7 +361,7 @@
   }
   .hotels-parametrs {
     width: 1200px;
-    height: 408px;
+    min-height: 290px; /*Критерий на переполнение*/
     background-image: url("../img/background.png");
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
@@ -390,13 +392,13 @@
   
   }
   .parametrs-filter {
-    width: 1057px;
+    padding-left: 71px;
+    padding-right: 72px;
     display: flex;
   }
 
   .parametrs-filter-one {
     width: 150px;
-    padding-left: 71px;
     margin-right: 68px;
     
   }
@@ -500,13 +502,13 @@
     line-height: 23px;
     color: #333333;
   }
-  .hotels-card {
+  .hotels-item {
     margin-left: 71px;
     display: flex;
     width: 1056px;
  
   }
-.hotels-img {
+.hotels-img-block {
   margin-right: 36px;
 }
 
