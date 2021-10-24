@@ -95,10 +95,10 @@
 
   .main-index {
     color: #000000;
+    background: #FFFFFF;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+    
   }
 
   .promo {
@@ -252,8 +252,7 @@
     text-transform: uppercase;
     color: #000000;
   }
-  
-  .hotels-text {
+  .hotels-text-order {
     text-align: center;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
@@ -262,6 +261,7 @@
     line-height: 26px;
     color: #333333;
   }
+  
   
   .button-hotels-search {
     text-align: center;
@@ -314,8 +314,6 @@
     color: #FFFFFF; 
   }
 
-  
-  
   .newsletter-text {
     text-align: center;
     font-family: "PT Sans", sans-serif;
@@ -360,7 +358,11 @@
     background-repeat: no-repeat;
   }
   .hotels-parametrs {
+    width: 1200px;
+    height: 408px;
     background-image: url("../img/background.png");
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
   }
 
   .inner-block {
@@ -409,7 +411,6 @@
     
   }
   
-
   .parametrs-filter-title {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
@@ -465,15 +466,7 @@
     text-transform: uppercase;
     color: #000000;
   }
-
-  .search-result {
-    background-size: #FFFFFF;
-  }
-
-  .newsletter {
-    background-size: #FFFFFF;
-  }
-
+  
   .newsletter-title-black {
     text-align: center;
     font-family: "PT Sans", sans-serif;
@@ -516,21 +509,9 @@
 .hotels-img {
   margin-right: 36px;
 }
-  /* .hotels-block-one {
-    
-  }
-  .hotels-block-two {
-    
-  }
-  .hotels-block-three {
-    
-  }
-  .hotels-block-four {
-    
-  } */
 
   .rating-text {
-    margin-left: 200px;
+    margin-left: 361px;
   }
   .button-upload {
     margin: 0 auto;
@@ -557,7 +538,7 @@
     color: #000000;
   }
   
-  .hotels-text {
+  .hotels-text-card {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -565,7 +546,7 @@
     line-height: 23px;
     color: #333333;
   }
-  
+
   .button-gray {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
