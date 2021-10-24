@@ -355,15 +355,17 @@
   
   .main-inner {
     color: #FFFFFF;
-    background-image: url("../img/background.png");
+    background: #FFFFFF;
     background-size: 100% auto;
     background-repeat: no-repeat;
+  }
+  .hotels-parametrs {
+    background-image: url("../img/background.png");
   }
 
   .inner-block {
     width: 528px;
     padding-left: 71px;
-   
   }
   
   .inner-header-title {
@@ -514,23 +516,22 @@
 .hotels-img {
   margin-right: 36px;
 }
-  .hotels-block-one {
-    width: 319px;
-    margin-right: 361px;
+  /* .hotels-block-one {
+    
   }
   .hotels-block-two {
-    width: 319px;
-    margin-right: 361px;
+    
   }
   .hotels-block-three {
-    width: 319px;
-    margin-right: 361px;
+    
   }
   .hotels-block-four {
-    width: 319px;
-    margin-right: 361px;
-  }
+    
+  } */
 
+  .rating-text {
+    margin-left: 200px;
+  }
   .button-upload {
     margin: 0 auto;
   }
