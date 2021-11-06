@@ -42,6 +42,7 @@
     width: 1200px; 
     min-height: 100%;
     background: #FFFFFF;
+    box-shadow: 1px 4px 4px 4px #E5E5E5;
   
   }
 
@@ -57,6 +58,7 @@
   }
   
   .navigation {
+    position: relative;
     display: flex;
     width: 1200px;
     height: 65px;
@@ -69,26 +71,31 @@
     flex-wrap: wrap;
     padding-top: 19px;
     width: 412px;
+    min-height: 26px;
     margin: 0; 
     padding-left: 71px;
     list-style-type: none;
+    margin-right: 395px;
+   
   }
-  .underline-navigation {
+  .navigation-list::before {
     position: absolute;
-    top: 37px;
-    left: 286px;
-
-  }
-  .main-navigation {
-    position: absolute;
-    top: 37px;
+    top: 38px;
     left: 70px;
+    content: url("../img/indicator_main.svg");
   }
+
+  .catalog-list::before {
+    position: absolute;
+    top: 38px;
+    left: 285px;
+    content: url("../img/indicator_catalog.svg");
+  }
+  
   .logo-header {
-    /* display: block; */
-    margin: 0 auto;
-    margin-right: 209px;
-    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 531px;
     z-index: 1;
     
   } 
@@ -109,17 +116,44 @@
     text-decoration: none;
 
   }
-
+  .main-link:hover {
+    color: #756257;
+  }
+  
   .navigation-user {
     display: flex;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 334px;
+    width: 331px;
     align-items: center;
     
   }
- 
+  .navigation-user-item {
+    margin-right: 21px;
+  }
+  .navigation-user-item:nth-child(2) {
+    margin-right: 33px;
+  }
+  .user-link-button {
+    width: 160px;
+    height: 37px;
+    border-radius: 4px;
+    background-color: #756257;
+    border: none;
+    cursor: pointer;
+   }
+    
+    .navigation-text {
+    display: block;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+    text-align: center;
+    text-decoration: none;
+      
+    } 
   .favorite-container {
     position: relative;
     
@@ -127,11 +161,11 @@
    .favorite-like {
      position: absolute;
      top: -7px;
-     left: 18px;
+     left: 12px;
    }
    .like-text {
     position: absolute;
-    top: 4px;
+    top: 13px;
     left: 4px;
     font-family: PT Sans;
     font-style: normal;
@@ -141,36 +175,9 @@
     color: #FFFFFF;
     text-align: center;
    }
- .user-link {
-   margin-right: 21px;
-   
- }
- .user-link-button {
-  width: 160px;
-  height: 37px;
-  border-radius: 4px;
-  background-color: #756257;
-  border: none;
-  cursor: pointer;
-  margin: 0;
- }
-  
-  .navigation-text {
-    display: block;
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF; 
-    padding-top: 9px;
-    
-  } 
-  
+
   .navigation-user .navigation-link {
-    min-width: 31px;
+   
     min-height: 27px;
     
   }
@@ -183,8 +190,6 @@
     flex-grow: 1;
  }
 
-  
-
   .main-index {
     color: #000000;
     background: #FFFFFF;
@@ -194,20 +199,28 @@
 
   .promo {
     background-image: url("../img/mountain.jpg");
+    height: 455px;
   }
 
   .logo-main {
     display: block;
     margin: 0 auto;
     padding-top: 46px;
-    margin-bottom: 25px ;
+    
+   
 
+  }
+  .promo::after {
+    content: url("../img/divider.svg");
+    top: -80px;
+    left: 0;
   }
   .advantages {
     padding-top: 63px;
   }
   .advantages-heading {
     width: 720px;
+    min-height: 80px;
     margin: 0 auto;
     margin-bottom: 23px;
     font-family: "PT Sans", sans-serif;
@@ -221,6 +234,8 @@
   }
   
   .advantages-subtitle {
+    weight: 720px;
+    min-height: 37px;
     margin: 0;
     margin-bottom: 79px;
     text-align: center;
@@ -297,6 +312,7 @@
   }
   
   .advantages-title-black {
+    padding-top: 23px;
     margin: 0;
     text-align: center;
     margin-bottom: 18px;
@@ -340,12 +356,17 @@
 
   .advantages-two-block {
     width: 400px;
+    
     background: rgba(131, 179, 211, 0.12);
     padding-top: 89px;
     padding-bottom: 79px;
   }
-
+.advantages-two-block::before {
+  content: url("../img/housing.svg");
+ 
+}
   .advantages-logo-block {
+    
     margin-bottom: 23px;
   }
 
@@ -355,12 +376,17 @@
     padding-top: 91px;
     padding-bottom: 79px;
   }
-
+  .advantages-three-block::before{
+    content: url("../img/food.svg");
+  }
   .advantages-four-block {
     width: 400px;
     background: rgba(131, 179, 211, 0.12);
     padding-top: 85px;
     padding-bottom: 79px;
+  }
+  .advantages-four-block::before {
+    content: url("../img/souvenir.svg");
   }
   .advantages-three-line { /*3-я строка преимуществ*/
     display: flex;
@@ -415,22 +441,23 @@
     color: #000000;
   }
   .hotels-text-order {
-    width: 720px;
-    padding-left: 240px;
-    margin: 0;
+    width: 700px;
+    margin: 0 auto;
     margin-bottom: 73px;
     text-align: center;
-    
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 26px;
     color: #333333;
+    
   }
   .button-hotels {
-    padding-left: 312px;
+    display: flex;
+    justify-content: center;
   }
+  
   .button-hotels-search {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
@@ -443,9 +470,9 @@
     color: #FFFFFF;
     background: #756257;
     display: inline-block;
-    padding-top: 13px;
+    padding-top: 25px;
     width: 575px;
-    height: 60px;
+    min-height: 60px;
     text-decoration: none;
     border-radius: 10px;
     cursor: pointer;
@@ -657,7 +684,12 @@
     outline: 2px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
   }
- 
+  .breadcrumbs::before {
+    position: absolute;
+    content: url("../img/breadcrumbs_vector.svg");
+    top: -15px;
+    left: 25px;
+  }
   .breadcrumbs-icon-house {
     position: absolute;
     top: -2px;
@@ -666,14 +698,7 @@
     left: -135px;
     margin: auto;
   }
-  .breadcrumbs-icon-vector {
-    position: absolute;
-    top: -1px;
-    right: -40px;
-    bottom: -2px;
-    left: -135px;
-    margin: auto;
-  }
+ 
   
   .breadcrumbs-text {
     margin: 0;
@@ -1138,6 +1163,7 @@
   }
  
   .newsletter-title-black {
+    
     text-align: center;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
