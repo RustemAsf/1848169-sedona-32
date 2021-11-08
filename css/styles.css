@@ -42,12 +42,12 @@
     width: 1200px; 
     min-height: 100%;
     background: #FFFFFF;
-    box-shadow: 1px 4px 4px 4px #E5E5E5;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 20% );
   
   }
 
   .visually-hidden {
-    position: absolute;
+    position: absolute; 
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -61,12 +61,11 @@
     position: relative;
     display: flex;
     width: 1200px;
-    height: 65px;
+    min-height: 65px;
     margin: 0 auto;
   }
   
   .navigation-list {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     width: 450px;
@@ -97,28 +96,15 @@
     text-decoration: none;
     
   }
-  .navigation-list::before {
-    position: absolute;
-    top: 38px;
-    left: 80px;
-    content: url("../img/indicator_main.svg");
-  }
-
-  .catalog-list::before {
-    position: absolute;
-    top: 38px;
-    left: 315px;
-    content: url("../img/indicator_catalog.svg");
-  }
   
   .logo-header {
     position: absolute;
     top: 0;
-    left: 531px;
+    left: 50%;
+    transform: translate(-50%);
     z-index: 1;
     
   } 
-  
   
   .main-link:hover {
     color: #756257;
@@ -231,7 +217,7 @@
 
   .user-link-button {
     width: 160px;
-    height: 37px;
+    
     border-radius: 4px;
     background-color: #756257;
     border: none;
@@ -291,18 +277,18 @@
 
   .promo {
     background-image: url("../img/mountain.jpg");
-    height: 455px;
+    background-repeat: no-repeat;
   }
 
   .logo-main {
     display: block;
     margin: 0 auto;
     padding-top: 46px;
+    margin-bottom: 31px;
     
-   
-
   }
   .promo::after {
+    
     content: url("../img/divider.svg");
     top: -80px;
     left: 0;
@@ -602,20 +588,15 @@
     background-repeat: no-repeat;
   }
 
-  
-  .page-footer-container {
+  .newsletter-block {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-   
-  }
-  .newsletter-block {
+    display: block;
+    margin: 0 auto;
     padding-top: 94px;
     padding-bottom: 94px;
-    width: 800px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    
+    
   }
   .newsletter-title {
     margin: 0;
@@ -632,7 +613,7 @@
   .newsletter-text {
     width: 650px;
     min-height: 72px;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 26px;
     text-align: center;
     font-family: "PT Sans", sans-serif;
@@ -641,9 +622,13 @@
     font-size: 22px;
     line-height: 26px;
     color: #FFFFFF;
+    
+
   }
   .newsletter-form {
     display: flex;
+    margin: 0 auto;
+    width: 800px;
     
   }
   .field {
@@ -748,12 +733,9 @@
 }
   .social-list-block {
     display: flex;
-    width: 1200px;
     padding-top: 40px;
     padding-bottom: 30px;
     padding-left: 72px;
-    padding-right: 72px;
-    justify-content: space-between;
     background-color: #FFFFFF;
     
     }
@@ -769,6 +751,7 @@
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    margin-right: 61px;
     list-style-type: none;
     
   }
@@ -777,11 +760,9 @@
     margin-right: 0;
   }
   
-  
-  
-  
   .contacts-phone {
-    /* width: 720px; */
+    width: 720px;
+    margin-right: 53px;
     text-align: center;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
@@ -808,7 +789,10 @@
     
   }
  /*Ccылка HTML academy _состояния*/
-
+.htmlacademy-link {
+width: 115px;
+min-height: 34px;
+}
  .html-logo:hover path.html-color  { /*?почему не работает*/
   color: #756257
 }
@@ -834,9 +818,6 @@
 
   }
   .hotels-parametrs {
-    width: 1200px;
-    height: 408px;
-    
     min-height: 290px; 
     background-image: url("../img/catalog-background.png");
     
@@ -849,7 +830,6 @@
   
   .inner-header-title {
     width: 528px;
-    /* height: 68px; */
     margin: 0;
     padding-top: 35px;
     font-family: "PT Sans", sans-serif;
@@ -899,6 +879,7 @@
     padding-left: 71px;
     padding-right: 72px;
     display: flex;
+    padding-bottom: 79px;
   }
   .parametrs-filter-title {
     font-family: "PT Sans", sans-serif;
@@ -1147,43 +1128,10 @@
     cursor: pointer;
     margin-right: 8px;
   }
-  .toggle-black {
+  .toggle-active {
     border: 2px solid #000000;
     box-sizing: border-box;
     border-radius: 4px;
-  }
-  .hotels-list {
-    margin: 0;
-    padding: 0;
-    padding-top: 31px;
-  }
-  .hotels-item {
-    display: flex;
-    margin-left: 72px;
-    /* margin-bottom: 60px; */
-  }
-  .hotels-img-block {
-    margin-right: 36px;
-    margin-bottom: 60px;
-    
-  }
-
-  .hotels-block-one {
-    margin-top: 0;
-    margin-right: 361px;
-  }
-  .hotels-block-two {
-    margin: 0;
-    margin-right: 361px;
-  }
-  .hotels-block-three {
-    margin: 0;
-    margin-right: 361px;
-  }
-  .hotels-block-four {
-    margin: 0;
-    margin-right: 361px;
-    margin-bottom: 61px;
   }
 
   .hotels-title {
@@ -1196,30 +1144,6 @@
     line-height: 31px;
     color: #000000;
   }
-  .block-one {
-    margin-right: 505px;
-  }
-  .block-two {
-    margin-right: 556px;
-  }
-  .block-three {
-    margin-right: 527px;
-  }
-  .block-four {
-    margin-right: 597px;
-  }
-  .hotels-rating {
-    display: flex;
-  
-  }
-  .hotels-rating-list {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    width: 91px;
-    list-style-type: none;
-  }
-  
   .hotels-text {
     margin: 0;
     font-family: "PT Sans", sans-serif;
@@ -1229,7 +1153,13 @@
     line-height: 23px;
     color: #333333;
   }
-    .rating-text {
+  .hotels-text-block {
+    display: flex;
+    width: 235px;
+    justify-content: space-between;
+    margin-bottom: 31px;
+  }
+  .rating-text {
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
@@ -1242,20 +1172,72 @@
     background: #F2F2F2;
     border-radius: 4px;
       
-    }
-    .rating-image {
-    margin-right: 7px;
-    justify-content: center;
-    }
-  .price {
+  }
+  
+  .hotels-list {
+    margin: 0;
+    padding: 0;
+    padding-top: 31px;
+  }
+  .hotels-item {
+    display: flex;
+    margin-left: 72px;
+    
+  }
+  .hotels-img-block {
+    margin-right: 36px;
+    margin-bottom: 60px;
+    
+  }
+
+  .hotels-block-one {
+    display: flex;
+    margin-top: 0;
+  }
+  .hotels-block-two {
+    display: flex;
+    margin-top: 0;
+  }
+  .hotels-block-three {
+    display: flex;
+    margin-top: 0;
+  }
+  .hotels-block-thour {
+    display: flex;
+    margin-top: 0;
+  }
+  .hotels-block {
+    /* display: flex; */
+    display: block;
+    flex-wrap: wrap;
+    width: 319px;
+    min-height: 120px;
+    margin-right: 361px;
+   
+  }
+  .block-one {
     margin: 0;
   }
-  .hotels-text-block {
+  .hotels-rating {
     display: flex;
-    width: 235px;
-    justify-content: space-between;
-    margin-bottom: 31px;
+    flex-wrap: wrap;
+    width: 160px;
+    min-height: 117px;
+    
   }
+  .hotels-rating-list {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    width: 319px;
+    list-style-type: none;
+  }
+  .rating-item {
+    width: 18px;
+    
+    height: 17px;
+    margin-right: 7px;
+}
   .hotels-button {
     display: flex;
   }
@@ -1286,10 +1268,9 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    text-align: center;
     color: #FFFFFF;
     width: 160px;
-    line-height: 23px;
+    padding: 0;
     border: none;
     background-color: transparent;
   }
@@ -1310,7 +1291,7 @@
     display: inline-block;
     cursor: pointer;
     border: none;
-    margin-right: 361px;
+    
   }
   .button-gray {
     margin-right: 8px;
@@ -1345,9 +1326,8 @@
     display: inline-block;
     cursor: pointer;
     border: none;
-    margin-right: 361px;
   }
- 
+
   .newsletter-title-black {
     
     text-align: center;
@@ -1481,12 +1461,13 @@
     
   }
   
-  .page-white-footer {
+  .page-catalog-footer {
     background: #FFFFFF;
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
   .newsletter-title-catalog {
+    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -1495,14 +1476,18 @@
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    margin-bottom: 15px;
   }
   
   .newsletter-text-catalog {
+    margin: 0 auto;
     font-family: "PT Sans", sans-serif;
+    width: 680px;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
     color: #333333;
+    margin-bottom: 26px;
   }
