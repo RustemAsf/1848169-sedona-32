@@ -94,6 +94,7 @@
   box-sizing: border-box;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
+  
 }
 .popover-hotels {
   padding-left: 25px;
@@ -104,7 +105,39 @@
 .popover-content {
   height: 100%;
 }
+.popover-one-line {
+  display: flex;
+  min-height: 48px;
+}
+.popover-one-line-block {
+  display: block;
+  
+}
+.hotels-item-button {
+  border: none;
+  background-color: none;
+  padding: 0;
+  
+}
+.popover-hotels-title {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  align-items: center;
+  color: #000000;
+}
+.popover-hotels-text {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  align-items: center;
+  color: #333333;
 
+}
   .navigation-item {
     margin-right: 33px;
   }
@@ -291,7 +324,7 @@
 
   
   /* .navigation-user .navigation-link:nth-child(1) {
-    background-image: url("../img/logo_htmlacademy.svg");
+    background-image: url("../img/popover_delete_1.svg");
   }  */
   
  
@@ -1036,11 +1069,19 @@ min-height: 34px;
   .filter-group-three {
     display: flex;
     flex-wrap: wrap;
+    width: 287px;
     margin-right: 81px;
+    outline: 2px solid rgba(156, 156, 156, 0.5);
+    outline-offset: -5px;
   }
   .parametrs-filter-three {
       margin: 0;
       padding: 0;
+  }
+  .range-wrapper-inputs {
+    display: flex;
+    margin-bottom: 32px;
+    
   }
   .range-scale {
     position: relative; 
@@ -1084,15 +1125,13 @@ min-height: 34px;
     top: -8px;
     right: -10px;
   }
-  .range-wrapper-inputs {
-    margin-bottom: 32px;
-    outline: 2px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
-  }
+ 
   .range-input {
     height: 48px;
+    padding: 0;
+    margin: 0;
     border: 2px solid #FFFFFF;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     background: none;
     color: #FFFFFF;
   }
@@ -1101,7 +1140,7 @@ min-height: 34px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     padding-left: 17px;
-    margin-left: 2px;
+    /* margin-left: 2px; */
   }
   .right {
     border-top-right-radius: 4px;
