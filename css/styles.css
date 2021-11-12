@@ -900,8 +900,8 @@
   }
  /*Ccылка HTML academy _состояния*/
 .htmlacademy-link {
-width: 115px;
-min-height: 34px;
+  width: 115px;
+  min-height: 34px;
 }
  .html-logo:hover path.html-color  { /*?почему не работает*/
   color: #756257
@@ -973,7 +973,7 @@ border-radius: 30px;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  /* margin-bottom: 25px; */
+  
 }
 .modal-two-list {
   display: flex;
@@ -981,10 +981,79 @@ border-radius: 30px;
   justify-content: space-between;
   margin: 0;
 }
+.modal-three-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.modal-button-minus {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+}
+.modal-button-plus {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+  margin-right: 56px;
+}
+
+.minus-vector {
+  position: absolute;
+  left: 19px;
+  top: 24px;
+  cursor: pointer;
+}
+.plus-vector {
+  position: absolute;
+  left: 19px;
+  top: 17.5px;
+  cursor: pointer;
+}
+
+.modal-ellipse {
+  position: absolute;
+  top: 198px;
+  left: 400px;
+  cursor: pointer;
+}
+.modal-tooltip {
+  position: absolute;
+  top: 205px;
+  left: 412px;
+}
+.info-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: #83B3D3;
+  border-radius: 25px;
+}
+.modal_input {
+  text-align: center;
+  margin: 0;
+  width: 155px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  align-items: center;
+  color: #000000;
+}
 
 .data-form {
   position: relative;
-  
+ 
 }
 .data-link-one {
   position: absolute;
@@ -1011,6 +1080,7 @@ border-radius: 30px;
   padding: 0;
   width: 420px;
   height: 50px;
+  
   background: #F2F2F2;
   border-radius: 4px;
   color: #000000;
@@ -1022,35 +1092,32 @@ border-radius: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 20px;
   align-items: center;
   color: #FF5757;
   margin-left: 155px;
+  margin-bottom: 22px;
 }
 .data-label-two {
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 20px;
+  
   display: flex;
   align-items: center;
   color: #333333; 
   margin-left: 155px;
-}
-.modal-data-text {
-  margin: 0;
-  width: 155px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 40px;
-  align-items: center;
-  color: #000000;
-
+  margin-bottom: 22px;
 }
 
+.modal_input {
+  width: 33px;
+  border: none;
+  background: #F2F2F2;
+  border-radius: 4px;
+}
 .modal-title {
   margin: 0;
   margin-bottom: 32px;
@@ -1061,6 +1128,31 @@ border-radius: 30px;
   line-height: 40px;
   color: #000000;
   text-transform: uppercase;
+}
+.modal-data-text {
+  width: 155px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.right-text {
+  width: 54px;
+}
+.modal-button-text {
+  font-family: PT Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
 }
   /* Стилизуем каталог */
   
