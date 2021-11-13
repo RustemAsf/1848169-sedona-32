@@ -347,8 +347,8 @@
         <form class="data-form" action="https://echo.htmlacademy.ru/" method="post">
           <ul class="modal-list">
             <li class="modal-item">
-              <div class="modal-one-list">
-                <span class="modal-data-text">Дата заезда:</span>
+              <div class="modal-one-line">
+                <span class="modal-text-line">Дата заезда:</span>
                 <input class="field-data" type="data" name="data" id="data-fields-one" type="text"
                   placeholder="27 апреля 2020">
                 <a href="#" class="data-link-one">
@@ -386,11 +386,13 @@
                 </a>
                 <br>
                 <label class="data-label-one" for="data-fields-one">Мы не можем отправить вас в прошлое</label>
+
               </div>
             </li>
             <li class="modal-item">
-              <div class="modal-two-list">
-                <span class="modal-data-text">Дата выезда:</span>
+              <div class="modal-two-line">
+                <span class="modal-text-line">Дата выезда:</span>
+
                 <input class="field-data" type="data" name="data" id="data-fields-two" type="text"
                   placeholder="1 cентября 2021">
                 <a href="#" class="data-link-two">
@@ -428,11 +430,13 @@
                 </a>
                 <br>
                 <label class="data-label-two" for="data-fields-two">На эти даты есть свободные номера. Пока есть.
+
               </div>
             </li>
             <li class="modal-item">
-              <div class="modal-three-list">
-                <span class="modal-data-text">Взрослые:</span>
+              <div class="modal-three-line">
+                <span class="modal-text-line">Взрослые:</span>
+
                 <button class="modal-button-minus" type="button">
                   <svg class="minus-vector" width="13" height="1" viewBox="0 0 13 1" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -446,46 +450,51 @@
                     <path opacity="0.3" d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
                   </svg>
                 </button>
-                <span class="modal-data-text right-text">Дети:</span>
+
+                <span class="modal-text-line child-text">Дети:</span>
                 <div class="info-label">
                   <span class="visually-hidden">info</span>
-                </div>
-                <svg class="modal-tooltip" width="1" height="9" viewBox="0 0 1 9" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_346_217)">
-                    <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
-                    <path d="M1 0H0V1H1V0Z" fill="white" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_346_217">
-                      <rect width="1" height="9" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
+                  <svg class="modal-tooltip" width="1" height="9" viewBox="0 0 1 9" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_346_217)">
+                      <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
+                      <path d="M1 0H0V1H1V0Z" fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_346_217">
+                        <rect width="1" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  </div>
+                  <div class="tooltip-window">
+                    <p class="tooltip-text">Укажите количество детей которые будут с вами, возраст которых от 6 до 18 лет. Дети до 16 лет размещаются бесплатно.</p>
+                  </div>
+                 
+
+                <button class="modal-button-minus" type="button">
+                  <svg class="minus-vector" width="13" height="1" viewBox="0 0 13 1" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
+                  </svg>
+                </button>
+                <input class="modal_input" type="number" id="delieve-pieces" name="delieve-pieces" placeholder="1">
+                <button class="modal-button-plus" type="button">
+                  <svg class="plus-vector" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
+                  </svg>
+                </button>
+
               </div>
-              <button class="modal-button-minus" type="button">
-                <svg class="minus-vector" width="13" height="1" viewBox="0 0 13 1" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
-                </svg>
-              </button>
-              <input class="modal_input" type="number" id="delieve-pieces" name="delieve-pieces" placeholder="1">
-              <button class="modal-button-plus" type="button">
-                <svg class="plus-vector" width="13" height="13" viewBox="0 0 13 13" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path opacity="0.3" d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
-                </svg>
-              </button>
               <button class="modal-search-button" type="submit">Найти</button>
+
+            </li>
+          </ul>
+        </form>
       </div>
 
-      
-      </li>
-      </ul>
-      </form>
     </div>
-
-  </div>
 
   </div>
 </body>
