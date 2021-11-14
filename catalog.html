@@ -22,6 +22,7 @@
             <a class="navigation-link main-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
+        
         <a class="logo-header" href="#">
           <svg width="138" height="70" viewBox="0 0 138 70" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
@@ -104,25 +105,25 @@
         <header class="inner-header">
           <div class="inner-block">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
-            <div class="breadcrumbs-block">
-            <ul class="breadcrumbs">
+            <ul class="breadcrumbs-list">
               <li class="breadcrumbs-item">
-
                 <a class="breadcrumbs-link" href="index.html">
                   <span class="visually-hidden">Главная</span>
-                  <svg class="breadcrumbs-icon-house"  width="12" height="12"
-                    viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="breadcrumbs-color" d="M6 0.300049L0 5.80005V12H12V5.80005L6 0.300049ZM11 11H1V6.20005L6 1.70005L11 6.20005V11Z"
+                  <svg class="house-icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="breadcrumbs-color"
+                      d="M6 0.300049L0 5.80005V12H12V5.80005L6 0.300049ZM11 11H1V6.20005L6 1.70005L11 6.20005V11Z"
                       fill="white" />
                     <path class="breadcrumbs-color" d="M4 10H5V7.5H7V10H8V6.5H4V10Z" fill="white" />
                   </svg>
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <p class="breadcrumbs-text">Гостиницы</p>
+                <a class="breadcrumbs-text-link" href="#">
+                  <span class="breadcrumbs-text">Гостиницы</span>
+                </a>
               </li>
             </ul>
-          </div>
           </div>
         </header>
         <h2 class="visually-hidden">Параметры гостиницы</h2>
@@ -185,16 +186,18 @@
               </ul>
             </fieldset>
           </div>
+          
           <div class="filter-group-three">
             <fieldset class="parametrs-filter-three">
               <legend class="parametrs-title-price">Стоимость, ₽:</legend>
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
-                  <input class="range-input left" type="number" value="0"  placeholder="Пароль" name="min-price" style="width: 143px">
-                  <input class="range-input right" type="number" value="9000"  name="max-price" style="width: 143px">
+                  <input class="range-input left" type="number" value="0" placeholder="Пароль" name="min-price"
+                    style="width: 143px">
+                  <input class="range-input right" type="number" value="9000" name="max-price" style="width: 143px">
 
                 </label>
-    
+
               </div>
               <div class="range">
                 <div class="range-scale">
@@ -214,6 +217,7 @@
             <button class="button-blue-filter" type="submit">Применить</button>
             <button class="button-dark-filter" type="submit">Сбросить</button>
           </div>
+          
         </form>
       </section>
       <!--Создание секции результаты поиска-->
@@ -268,10 +272,14 @@
           <li class="hotels-item">
             <div class="hotels-block-one">
               <div class="hotels-img-block">
-                <img class="hotels-img" src="img/amara_hotel.jpg" width="180" height="120" alt="Фото Амара отель">
+                <a href="#" class="hotels-list-img">
+                  <img class="hotels-img" src="img/amara_hotel.jpg" width="180" height="120" alt="Фото Амара отель">
+                </a>
               </div>
               <div class="hotels-block">
-                <h3 class="hotels-title">Amara Resort & Spa</h3>
+                <a href="#" class="hotels-list-link">
+                  <h3 class="hotels-title">Amara Resort & Spa</h3>
+                </a>
                 <div class="hotels-text-block">
                   <p class="hotels-text">Гостиница</p>
                   <p class="hotels-text">От 4000 ₽</p>
@@ -303,15 +311,20 @@
           <li class="hotels-item">
             <div class="hotels-block-two">
               <div class="hotels-img-block">
-                <img class="hotels-img" src="img/desert-hotel.jpg" width="180" height="120" alt="Фото Десерт отель">
+                <a href="#" class="hotels-list-img">
+                  <img class="hotels-img" src="img/desert-hotel.jpg" width="180" height="120" alt="Фото Десерт отель">
+                </a>
               </div>
               <div class="hotels-block">
-                <h3 class="hotels-title">Desert Quail Inn</h3>
+                <a href="#" class="hotels-list-link">
+                  <h3 class="hotels-title">Desert Quail Inn</h3>
+                </a>
                 <div class="hotels-text-block">
                   <p class="hotels-text">Мотель</p>
                   <p class="hotels-text">От 3000 ₽</p>
                 </div>
                 <div class="hotels-button">
+
                   <a class="button-gray" href="#">Подробнее</a>
                   <button class="button-blue" type="submit">В избранное</button>
                 </div>
@@ -336,10 +349,14 @@
           <li class="hotels-item">
             <div class="hotels-block-three">
               <div class="hotels-img-block">
-                <img class="hotels-img" src="img/villas-hotel.jpg" width="180" height="120" alt="Фото виллас отель">
+                <a href="#" class="hotels-list-img">
+                  <img class="hotels-img" src="img/villas-hotel.jpg" width="180" height="120" alt="Фото виллас отель">
+                </a>
               </div>
               <div class="hotels-block">
-                <h3 class="hotels-title">Villas at Poco Diablo</h3>
+                <a href="#" class="hotels-list-link">
+                  <h3 class="hotels-title">Villas at Poco Diablo</h3>
+                </a>
                 <div class="hotels-text-block">
                   <p class="hotels-text">Апартаменты</p>
                   <p class="hotels-text">От 2000 ₽</p>
@@ -366,10 +383,14 @@
           <li class="hotels-item">
             <div class="hotels-block-thour">
               <div class="hotels-img-block">
-                <img class="hotels-img" src="img/green_hotel.jpg" width="180" height="120" alt="Фото грин отель">
+                <a href="#" class="hotels-list-img">
+                  <img class="hotels-img" src="img/green_hotel.jpg" width="180" height="120" alt="Фото грин отель">
+                </a>
               </div>
               <div class="hotels-block">
-                <h3 class="hotels-title">GreenTree Inn</h3>
+                <a href="#" class="hotels-list-link">
+                  <h3 class="hotels-title">GreenTree Inn</h3>
+                </a>
                 <div class="hotels-text-block">
                   <p class="hotels-text">Гостиница</p>
                   <p class="hotels-text">От 3000 ₽</p>
@@ -434,7 +455,7 @@
       </section>
     </main>
     <footer class="page-catalog-footer">
-      
+
       <div class="newsletter-block">
         <h2 class="newsletter-title-catalog">Подпишитесь на рассылку</h2>
         <p class="newsletter-text-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -470,8 +491,7 @@
               <span class="visually-hidden">Facebook</span>
               <svg class="footer-social" width="10" height="18" viewBox="0 0 10 18" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path class="social-color" d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z"
-                  fill="#83B3D3" />
+                <path class="social-color" d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z" fill="#83B3D3" />
               </svg>
             </a>
           </li>
@@ -504,7 +524,7 @@
           </svg>
         </a>
       </div>
-  </footer>
+    </footer>
   </div>
 </body>
 
