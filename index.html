@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>SEDONA</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
   <div class="page-container">
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link main-link" href="index.html">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link main-link" href="#">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link main-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <a class="logo-header" href="#">
@@ -48,7 +46,7 @@
                 fill="white" />
             </g>
             <defs>
-              <clipPath id="clip0">
+              <clipPath>
                 <rect width="138" height="70" fill="white" />
               </clipPath>
             </defs>
@@ -92,7 +90,6 @@
                   </svg>
                   <span class="like-text">12</span>
                 </div>
-
               </a>
             </div>
             <div class="popover popover-hotels">
@@ -122,7 +119,6 @@
                 <h2 class="visually-hidden">Корзина</h2>
               </div>
               <ul class="popover-list">
-
                 <li class="popover-item">
                   <div class="popover-block">
                     <div class="popover-line-img">
@@ -166,7 +162,6 @@
                       <p class="popover-hotels-text">Апартаменты</p>
                     </div>
                   </div>
-
                   <button type="button" class="hotels-item-button button">
                     <svg class="button-popover" width="16" height="16" viewBox="0 0 16 16" fill="#E5E5E5" xmlns="http://www.w3.org/2000/svg">
                       <g>
@@ -186,15 +181,11 @@
                     </svg>
                     <span class="visually-hidden">Удалить из корзины</span>
                   </button>
-
-
                 </li>
               </ul>
               <button class="button-chosen" type="button">Все избранные</button>
             </div>
-
           </div>
-
           <a class="navigation-text user-link-button" href="#">Хочу сюда!</a>
         </div>
       </nav>
@@ -202,8 +193,7 @@
     <main class="main-container main-index">
       <h1 class="visually-hidden">SEDONA</h1>
       <section class="promo">
-        <img class="logo-main" src="img/logo_promo.svg" alt="Логотип Седоны">
-
+        <img class="logo-main" src="img/logo-promo.svg" alt="Логотип Седоны">
       </section>
       <section class="advantages">
         <h2 class="advantages-heading">Седона - небольшой городок в аризоне, заслуживаюший большего!</h2>
@@ -217,7 +207,7 @@
               <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="advantages-main-block">
-              <img class="advantages-main" src="img/advantages_one.jpg" width="800" height="384" alt="Преимущество №1">
+              <img class="advantages-main" src="img/advantages-one.jpg" width="800" height="384" alt="Преимущество №1">
             </div>
           </li>
           <li class="advantages-two-line">
@@ -236,7 +226,7 @@
           </li>
           <li class="advantages-three-line">
             <div class="advantages-main-block">
-              <img class="advantages-main" src="img/advantages_two.jpg" width="800" height="384" alt="Преимущество №2">
+              <img class="advantages-main" src="img/advantages-two.jpg" width="800" height="384" alt="Преимущество №2">
             </div>
             <div class="advantages-five-block">
               <h4 class=" advantages-title">Там есть<br>мост дьявола</h4>
@@ -272,13 +262,12 @@
           <a class="button-hotels-search search-text" href="#">Поиск гостиницы в Седоне</a>
         </div>
       </div>
-
     </main>
     <footer class="page-footer">
 
       <div class="newsletter-block">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="newsletter-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" placeholder="Ваш E-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
@@ -299,7 +288,7 @@
                     fill="#83B3D3" />
                 </g>
                 <defs>
-                  <clipPath id="clip0">
+                  <clipPath>
                     <rect width="18" height="15" fill="white" />
                   </clipPath>
                 </defs>
@@ -326,7 +315,7 @@
                     fill="#83B3D3" />
                 </g>
                 <defs>
-                  <clipPath id="clip0">
+                  <clipPath>
                     <rect width="20" height="16" fill="white" />
                   </clipPath>
                 </defs>
@@ -358,8 +347,7 @@
             <li class="modal-item">
               <div class="modal-one-line">
                 <label class="modal-text-line one-text-line" for="data-fields-one">Дата заезда:</label>
-                <input class="field-data" type="data" name="data" id="data-fields-one" type="text"
-                  placeholder="27 апреля 2020">
+                <input class="field-data" type="text" name="date" id="data-fields-one" placeholder="27 апреля 2020">
                 <a href="#" class="data-link-one">
                   <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z"
@@ -400,8 +388,7 @@
             <li class="modal-item">
               <div class="modal-two-line">
                 <label class="modal-text-line two-text-line" for="data-fields-two">Дата выезда:</label>
-                <input class="field-data" type="data" name="data" id="data-fields-two" type="text"
-                  placeholder="1 cентября 2021">
+                <input class="field-data" type="text" name="date" id="data-fields-two" placeholder="1 cентября 2021">
                 <a href="#" class="data-link-two">
                   <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z"
@@ -449,7 +436,7 @@
                       <path class="minus-vector-color" opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
                     </svg>
                   </button>
-                  <input class="modal_input" type="number" id="delieve-pieces" name="delieve-pieces" placeholder="2">
+                  <input class="modal_input" type="number" id="delieve-pieces-one" name="delieve-pieces" placeholder="2">
                   <button class="modal-button-plus" type="button">
                     <svg class="plus-vector" width="13" height="13" viewBox="0 0 13 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -504,7 +491,7 @@
                       <path class="minus-vector-color" opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="gray" />
                     </svg>
                   </button>
-                  <input class="modal_input" type="number" id="delieve-pieces" name="delieve-pieces" placeholder="1">
+                  <input class="modal_input" type="number" id="delieve-pieces-two" name="delieve-pieces-name" placeholder="1">
                   <button class="modal-button-plus" type="button">
                     <svg class="plus-vector" width="13" height="13" viewBox="0 0 13 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -514,15 +501,11 @@
                 </div>
               </div>
               <button class="modal-search-button" type="submit">Найти</button>
-
             </li>
           </ul>
         </form>
       </div>
-
     </div>
-
   </div>
 </body>
-
 </html>

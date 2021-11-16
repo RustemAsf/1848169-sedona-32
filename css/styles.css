@@ -74,9 +74,11 @@
     list-style-type: none;
     margin-right: 352px;
   }
+
   .navigation-user-item {
     position: relative;
 }
+
   .popover {
     position: absolute;
     top: 49px;
@@ -92,7 +94,7 @@
     border: 1px solid #E6E6E6;
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
     border-radius: 20px; 
-    /* display: none; */
+    display: none;
 } 
 
 .popover-content {
@@ -288,12 +290,21 @@
 .navigation-link::before {
   position: absolute;
   bottom: 0;
-  left: 77px;
+  left: 79px;
   content: "";
   width: 70px;
   border: 2px solid #756257;
 }
   
+.main-link::before {
+  position: absolute;
+  bottom: 0;
+  left: 314px;
+  content: "";
+  width: 93px;
+  border: 2px solid #756257;
+}
+
 .logo-header {
   position: absolute;
   top: 0;
@@ -301,21 +312,24 @@
   transform: translate(-50%);
   z-index: 1;
 } 
+
 .logo-header:focus {
   box-shadow: 0 0 0 2px #83B3D3;
   outline: none;
 }
-.main-link:hover {
+
+.navigation-link:hover {
   color: #756257;
 }
 
-.main-link:focus {
+.navigation-link:focus {
   outline: none;
   box-shadow: 0 0 0 3px #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
 }
-.main-link:active {
+
+.navigation-link:active {
   color: #756257;
   opacity: 0.3; 
 }
@@ -496,7 +510,7 @@
   min-height: 80px;
   margin: 0 auto;
   margin-bottom: 23px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -512,8 +526,8 @@
   margin: 0;
   margin-bottom: 79px;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
+  font-family: "PT Sans";
+  font-style: regular;
   font-weight: normal;
   font-size: 22px;
   line-height: 36px;
@@ -531,7 +545,7 @@
 .advantages-title {
   margin: 0;
   margin-bottom: 25px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -542,7 +556,7 @@
 
 .black {
   text-align: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -554,7 +568,7 @@
 .advantages-text-number {
   margin: 0;
   margin-bottom: 26px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -565,7 +579,7 @@
 
 }
 .gray {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -578,7 +592,7 @@
 .advantages-text {
   width: 220px;
   min-height: 73px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -593,7 +607,7 @@
   margin: 0;
   text-align: center;
   margin-bottom: 18px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -607,7 +621,7 @@
   min-height: 73px;
   padding-left: 75px;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -722,7 +736,7 @@
   margin: 0;
   margin-bottom: 15px;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -737,7 +751,7 @@
   margin: 0 auto;
   margin-bottom: 73px;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -811,7 +825,7 @@
   margin: 0;
   margin-bottom: 15px;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight:bold;
   font-size: 30px;
@@ -827,7 +841,7 @@
   margin: 0 auto;
   margin-bottom: 26px;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -966,8 +980,8 @@
   width: 720px;
   margin-right: 53px;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
+  font-family: "PT Sans";
+  font-style: regular;
   font-weight: normal;
   font-size: 40px;
   line-height: 40px;
@@ -1486,7 +1500,7 @@
   margin: 0;
   padding-left: 71px;
   padding-top: 35px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -1522,13 +1536,13 @@
 
 .breadcrumbs-list::before {
   position: absolute;
-  content: url("../img/breadcrumbs_vector.svg");
+  content: url("../img/breadcrumbs-vector.svg");
   top: -9px;
   left: 96px;
 }
  
 .breadcrumbs-text-link {
-  font-family: "PT Sans", sans-serif;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1605,7 +1619,7 @@
 }
 
 .parametrs-filter-title {
-  font-family: "PT Sans", sans-serif;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1616,7 +1630,7 @@
 
 .parametrs-title-price {
   margin-bottom: 34px;
-  font-family: "PT Sans", sans-serif;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1687,7 +1701,7 @@
 }
 
 .control-label {
-  font-family: "PT Sans", sans-serif;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1879,7 +1893,7 @@
   margin: 0;
   padding-top: 44px;
   margin-bottom: 42px;
-  font-family: "PT Sans", sans-serif;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -1890,18 +1904,18 @@
 
 .sorting-type {
   padding-top: 44px;
-  margin-right: 81px;
+  margin-left: auto;
 }
   
 .button-sorting {
   padding-top: 44px;
   width: 160px;
   display: flex;
-  margin-left: auto;
+ 
 
 }
 .select-control {
-  font-family: "PT Sans", sans-serif;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1917,6 +1931,7 @@
   background-repeat: no-repeat;
   background-position: right 16px center;
   appearance: none;
+  margin-right: 81px;
 }
   
 .select-control:hover {
@@ -1977,12 +1992,13 @@
 .hotels-title {
   margin: 0;
   margin-bottom: 1px;
-  font-family: "PT Sans", sans-serif;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 31px;
   color: #000000;
+  outline: none;
 }
 
 .hotels-list-link {
@@ -2008,7 +2024,7 @@
 
 .hotels-text {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -2108,7 +2124,7 @@
 }
 
 .button-blue-filter {
-  font-family: "PT Sans", sans-serif;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -2279,7 +2295,7 @@
 
 .newsletter-title-black {
   text-align: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: PT Sans;
   font-style: normal;
   font-weight:bold;
   font-size: 30px;
@@ -2290,7 +2306,7 @@
 
 .newsletter-text-gray {
   text-align: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -2310,9 +2326,11 @@
   padding-right: 288px;
   width: 625px;
   height: 55px;
+  color: #FFFFFF;
   background: #83B3D3;
   border-radius: 4px;
   margin: 0 auto;
+  display: flex;
   padding: 0;
   justify-content: center;
   cursor: pointer;
@@ -2340,21 +2358,6 @@
 
 .pagination-sorting {
   display: flex;
-}
-
-
-
-.button-upload {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 26px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
 }
 
 .pagination {
@@ -2410,6 +2413,7 @@
   cursor: pointer;
   margin-right: 8px;
   text-decoration: none;
+  margin-bottom: 2px;
 }
 
 .pagination-link:hover {
@@ -2448,7 +2452,7 @@
 }
 
 .number-text {
-  font-family: "PT Sans", sans-serif;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -2467,7 +2471,7 @@
 
 .newsletter-title-catalog {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -2480,7 +2484,7 @@
   
 .newsletter-text-catalog {
   margin: 0 auto;
-  font-family: "PT Sans", sans-serif;
+  font-family: PT Sans;
   width: 680px;
   font-style: normal;
   font-weight: normal;
