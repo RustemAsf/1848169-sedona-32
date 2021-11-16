@@ -70,7 +70,7 @@ body {
   flex-wrap: wrap;
   width: 450px;
   margin: 0; 
-  padding-left: 71px;
+  padding-left: 62px;
   list-style-type: none;
   margin-right: 352px;
 }
@@ -266,7 +266,8 @@ body {
 }
 
 .navigation-item {
-  margin-right: 33px;
+  margin-right: 20px;
+  padding-top: 3px;
 }
 
 .navigation-item:nth-child(3) {
@@ -290,7 +291,7 @@ body {
 .navigation-link::before {
   position: absolute;
   bottom: 0;
-  left: 79px;
+  left: 70px;
   content: "";
   width: 70px;
   border: 2px solid #756257;
@@ -299,7 +300,7 @@ body {
 .main-link::before {
   position: absolute;
   bottom: 0;
-  left: 314px;
+  left: 279px;
   content: "";
   width: 93px;
   border: 2px solid #756257;
@@ -502,7 +503,7 @@ body {
 }
 
 .advantages {
-  padding-top: 63px;
+  padding-top: 59px;
 }
 
 .advantages-heading {
@@ -544,7 +545,7 @@ body {
 }
 .advantages-title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
@@ -567,7 +568,7 @@ body {
 
 .advantages-text-number {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 33px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
@@ -603,7 +604,7 @@ body {
 }
   
 .advantages-title-black {
-  padding-top: 23px;
+  padding-top: 17px;
   margin: 0;
   text-align: center;
   margin-bottom: 18px;
@@ -619,7 +620,7 @@ body {
 .advantages-text-gray {
   width: 250px;
   min-height: 73px;
-  padding-left: 75px;
+  padding-left: 78px;
   text-align: center;
   font-family: "PT Sans";
   font-style: normal;
@@ -637,8 +638,8 @@ body {
 .advantages-one-block { 
   width: 400px;
   background: #83B3D3;
-  padding-top: 88px;
-  padding-bottom: 77px;
+  padding-top: 95px;
+  padding-bottom:61px;
 }
 
 .advantages-main {
@@ -657,7 +658,7 @@ body {
   width: 400px;
   background: rgba(131, 179, 211, 0.12);
   padding-top: 89px;
-  padding-bottom: 79px;
+  padding-bottom: 65px;
 }
 
 .advantages-two-block::before {
@@ -672,7 +673,7 @@ body {
   width: 400px;
   background: #FFFFFF;
   padding-top: 91px;
-  padding-bottom: 79px;
+  padding-bottom: 65px;
 
 }
 .advantages-three-block::before{
@@ -683,7 +684,7 @@ body {
   width: 400px;
   background: rgba(131, 179, 211, 0.12);
   padding-top: 85px;
-  padding-bottom: 79px;
+  padding-bottom: 65px;
 
 }
 .advantages-four-block::before {
@@ -697,8 +698,8 @@ body {
 .advantages-five-block {
   width: 400px;
   background: #83B3D3;
-  padding-top: 88px;
-  padding-bottom: 77px;
+  padding-top: 95px;
+  padding-bottom: 61px;
 }
 
 .advantages-four-line {
@@ -709,32 +710,32 @@ body {
   width: 400px;
   background: rgba(131, 179, 211, 0.12);
   padding-top: 98px;
-  padding-bottom: 77px;
+  padding-bottom: 60px;
 }
 
 .advantages-seven-block {
   width: 400px;
   background: rgba(131, 179, 211, 0.2);
   padding-top: 98px;
-  padding-bottom: 77px;
+  padding-bottom: 60px;
 }
 
 .advantages-eight-block {
   width: 400px;
   background: rgba(131, 179, 211, 0.12);
   padding-top: 98px;
-  padding-bottom: 77px;
+  padding-bottom: 60px;
 }
   
 .hotels-order {
   margin: 0 auto;
-  padding-top: 91px;
+  padding-top: 87px;
   padding-bottom: 91px;
 }
   
 .hotels-heading {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 27px;
   text-align: center;
   font-family: "PT Sans";
   font-style: normal;
@@ -749,7 +750,7 @@ body {
   width: 700px;
   min-height: 37px;
   margin: 0 auto;
-  margin-bottom: 73px;
+  margin-bottom: 60px;
   text-align: center;
   font-family: "PT Sans";
   font-style: normal;
@@ -817,13 +818,13 @@ body {
   flex-wrap: wrap;
   display: block;
   margin: 0 auto;
-  padding-top: 94px;
+  padding-top: 89px;
   padding-bottom: 94px; 
 }
 
 .newsletter-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 32px;
   text-align: center;
   font-family: "PT Sans";
   font-style: normal;
@@ -952,7 +953,7 @@ body {
   display: flex;
   padding-top: 40px;
   padding-bottom: 30px;
-  padding-left: 72px;
+  padding-left: 60px;
   background-color: #FFFFFF;
 }
     
@@ -977,8 +978,7 @@ body {
 }
   
 .contacts-phone {
-  width: 720px;
-  margin-right: 53px;
+  width: 700px;
   text-align: center;
   font-family: "PT Sans";
   font-style: regular;
@@ -988,8 +988,9 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  margin-right: 63px;
 }
-  
+
 .contacts-phone:hover {
   color: #756257;
 }
@@ -1009,7 +1010,6 @@ body {
  
 .htmlacademy-link {
   width: 115px;
-  min-height: 34px;
 }
 
 .html-logo:hover path.html-color  { 
@@ -1498,7 +1498,7 @@ body {
   width: 528px;
   margin: 0;
   padding-left: 71px;
-  padding-top: 35px;
+  padding-top: 52px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
@@ -1614,7 +1614,7 @@ body {
   padding-left: 71px;
   padding-right: 72px;
   display: flex;
-  padding-bottom: 79px;
+  padding-bottom: 65px;
 }
 
 .parametrs-filter-title {
@@ -1624,11 +1624,11 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .parametrs-title-price {
-  margin-bottom: 34px;
+  margin-bottom: 24px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -1645,7 +1645,7 @@ body {
 .control {
   position: relative;
   display: block;
-  padding-left: 36px;
+  padding-left: 39px;
 }
 
 .control-input {
@@ -1666,8 +1666,9 @@ body {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.control-mark:focus { 
-  background: #FFFFFF;
+.control:focus .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
   box-shadow: 0 0 0 3px #83B3D3;
 }
 
@@ -1711,13 +1712,14 @@ body {
 .parametrs-filter-one {
   width: 150px;
   padding: 0;
-  margin-right: 68px; 
+  margin-right: 60px; 
 }
 
 .parametrs-filter-two {
   width: 145px;
   padding: 0;
-  margin-right: 167px;
+  margin-right: 160px;
+  border: 0;
 }
 
 .filter-group-three {
@@ -1782,7 +1784,12 @@ body {
   margin-bottom: 32px;
 
 }
+
 .range-input {
+  font-family: PT Sans;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
   background: transparent;
   height: 48px;
   border: 0;
@@ -1873,10 +1880,6 @@ body {
 
 }
 .parametrs-filter-one {
-  border: 0;
-}
-
-.parametrs-filter-two {
   border: 0;
 }
 
