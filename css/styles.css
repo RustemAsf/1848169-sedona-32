@@ -19,14 +19,14 @@ html {
 }
 
 body {
-  min-width: 1200px;;
+  min-width: 1200px;
   height: 100%;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
 }
 
 .page-header {
@@ -1858,6 +1858,7 @@ body {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   padding-left: 17px;
+  padding-right: 27px;
 }
   
 .number-text-left {
@@ -1877,7 +1878,7 @@ body {
 .number-text-right {
   position: absolute;
   top: 11px;
-  left: 251px;
+  left: 253px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -1951,6 +1952,7 @@ body {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   padding-left: 17px;
+  padding-right: 27px;
 }
 
 .parametrs-filter-button {
@@ -2161,17 +2163,11 @@ body {
   opacity: 0.3;
 }
 
-.hotels-block-one {
-  display: flex;
-  margin-top: 0;
-}
-
 .hotels-block {
   display: block;
   flex-wrap: wrap;
   width: 319px;
   min-height: 120px;
-  margin-right: 361px;
 }
 
 .block-one {
@@ -2183,6 +2179,7 @@ body {
   flex-wrap: wrap;
   width: 160px;
   min-height: 117px;
+  margin-left: auto;
 }
 
 .hotels-rating-list {
@@ -2270,6 +2267,7 @@ body {
 }
 
 .button-blue {
+  position: relative;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -2286,6 +2284,12 @@ body {
   cursor: pointer;
   border: none;
 }
+ .button-blue::before {
+   content:url("../img/divider-2.svg");
+   position: absolute;
+   top: 50px;
+   left: -383px;
+ }
 
 .button-blue:hover {
   background: #68A2CA;
@@ -2340,6 +2344,7 @@ body {
 }
 
 .button-green {
+  position: relative;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -2355,6 +2360,13 @@ body {
   display: inline-block;
   cursor: pointer;
   border: none;
+}
+
+.button-green::before {
+  content:url("../img/divider-2.svg");
+  position: absolute;
+  top: 50px;
+  left: -383px;
 }
 
 .button-green:hover {
