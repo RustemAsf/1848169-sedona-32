@@ -94,7 +94,7 @@ body {
   border: 1px solid #E6E6E6;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 20px; 
-  display: none;
+  /* display: none; */
 } 
 
 .popover-content {
@@ -102,12 +102,12 @@ body {
 }
 
 .popover-list {
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 .popover-item {
-  position: relative;
   display: flex;
   min-height: 48px;
   margin-bottom: 5px;
@@ -245,6 +245,10 @@ body {
   align-items: center;
   color: #000000;
   cursor: pointer;
+}
+
+.popover-line-block {
+  background-size: cover;;
 }
 
 .popover-line-block:hover {
@@ -821,6 +825,7 @@ body {
   background-image: url("../img/background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
+
 }
 
 .newsletter-block {
@@ -973,6 +978,7 @@ body {
   padding-bottom: 30px;
   padding-left: 60px;
   background-color: #FFFFFF;
+  flex-wrap: wrap;
 }
     
 .footer-social-link {
@@ -1299,6 +1305,7 @@ body {
   line-height: 40px;
   align-items: center;
   color: #000000;
+  -moz-appearance:textfield;
 }
 
 .data-form {
@@ -1722,7 +1729,6 @@ body {
 
 .control-input[type="radio"]:focus + .control-mark {
   background: rgba(255, 255, 255, 0.6);
-  border-radius: 4px;
   box-shadow: 0 0 0 3px #83B3D3;
 }
 
@@ -2091,10 +2097,12 @@ body {
   color: #756257;
 }
   
-.hotels-title:focus {
+.hotels-list-link:focus {
   outline: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
+  text-decoration: none;
+  outline: none;
 }
 
 .hotels-title:active {
@@ -2455,11 +2463,11 @@ body {
 .pagination {
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
   margin-right: auto;
   list-style-type: none;
-  /* padding-left: 72px; */
   display: flex;
-  max-width: 370px;
+  max-width: 380px;
 }
  
 .pagination-link-pagination-current {
