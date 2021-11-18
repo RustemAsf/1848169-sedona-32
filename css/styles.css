@@ -4,7 +4,7 @@
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
-  }
+}
   
 @font-face {
   font-family: "PT Sans";
@@ -588,8 +588,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-
 }
+
 .gray {
   font-family: "PT Sans";
   font-style: normal;
@@ -599,7 +599,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #333333;
-  }
+}
 
 .advantages-text {
   width: 220px;
@@ -661,7 +661,7 @@ body {
   background-color: #8A9884;
 }
 
-.advantages-two-line { /*2-я строка преимуществ*/
+.advantages-two-line { 
   display: flex;
 }
 
@@ -685,8 +685,8 @@ body {
   background: #FFFFFF;
   padding-top: 91px;
   padding-bottom: 65px;
-
 }
+
 .advantages-three-block::before{
   content: url("../img/food.svg");
 }
@@ -700,7 +700,6 @@ body {
 
 .advantages-four-block::before {
   content: url("../img/souvenir.svg");
-
 }
 
 .advantages-three-line { /*3-я строка преимуществ*/
@@ -716,7 +715,6 @@ body {
 
 .advantages-four-line {
   display: flex;
-
 }
 
 .advantages-six-block {
@@ -1666,7 +1664,6 @@ body {
   font-weight: bold;
   font-size: 20px;
   color: #FFFFFF;
-
 }
 
 .parametrs-filter-list {
