@@ -22,7 +22,7 @@ body {
   min-width: 1200px;
   height: 100%;
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", serif;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
@@ -86,12 +86,12 @@ body {
   z-index: 1;
   box-sizing: border-box;
   width: 400px;
-  padding: 25px 11px 25px 25px;
+  padding: 27px 11px 25px 25px;
   min-height: 232px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   color: #000000;
   background: #FFFFFF;
-  border: 1px solid #E6E6E6;
+  box-shadow: 0 0 0 1px #E6E6E6;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 20px; 
   /* display: none; */
@@ -102,13 +102,14 @@ body {
 }
 
 .popover-list {
-  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 .popover-item {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   min-height: 48px;
   margin-bottom: 5px;
 }
@@ -119,9 +120,9 @@ body {
 
 .button-chosen {
   position: absolute;
-  top: 172px;
-  left: -1px;
-  font-family: PT Sans;
+  bottom: 0px;
+  left: 0px;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -163,6 +164,11 @@ body {
   width: 36px;
   height: 36px;
   cursor: pointer;
+  border: none;
+  background: none;
+  margin-left: auto;
+  margin-bottom: auto;
+  padding: 0;
 }
 
 .button-popover:hover .button-popover-color  {
@@ -186,19 +192,10 @@ body {
 
 .popover-block {
   min-width: 211px;
-  height: 68px;
+  min-height: 68px;
   margin: 0;
   display: flex;
-}
-
-.popover-block:focus {
-  box-shadow: 0 0 0 3px #83B3D3;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.popover-block:active {
-  opacity:0.3;
+  outline: none;
 }
 
 .popover-close-button {
@@ -218,16 +215,8 @@ body {
   display: flex;
 }
 
-.hotels-item-button {
-  border: none;
-  background: none;
-  margin-left: auto;
-  margin-bottom: auto;
-  padding: 0;
-}
-
 .hotels-item-button:hover .button-popover-color {
-  fill:black;
+  fill:#000000;
 }
 
 .popover-line-img {
@@ -237,7 +226,7 @@ body {
 .popover-hotels-title {
   height: 21px;
   margin: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -247,22 +236,23 @@ body {
   cursor: pointer;
 }
 
-.popover-line-block {
-  background-size: cover;;
-}
-
-.popover-line-block:hover {
+.popover-block:hover {
   opacity: 0.6;
 }
 
-.popover-line-block:hover {
-  opacity: 0.3;
+.popover-block:focus {
+  box-shadow: 0 0 0 3px #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.popover-block:active {
+  opacity:0.3;
 }
 
 .popover-hotels-text {
-  height: 21px;
   margin: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -291,7 +281,7 @@ body {
   width: 90px;
   justify-content: center;
   min-height: 55px;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -452,7 +442,7 @@ body {
     
 .navigation-text {
   display: block;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -476,7 +466,7 @@ body {
   position: absolute;
   top: 13px;
   left: 4px;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -526,7 +516,7 @@ body {
   min-height: 80px;
   margin: 0 auto;
   margin-bottom: 23px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -542,7 +532,7 @@ body {
   margin: 0;
   margin-bottom: 79px;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -561,7 +551,7 @@ body {
 .advantages-title {
   margin: 0;
   margin-bottom: 27px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -572,7 +562,7 @@ body {
 
 .black {
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans",serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -584,7 +574,7 @@ body {
 .advantages-text-number {
   margin: 0;
   margin-bottom: 29px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -595,7 +585,7 @@ body {
 }
 
 .gray {
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -608,7 +598,7 @@ body {
 .advantages-text {
   width: 220px;
   min-height: 73px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -623,7 +613,7 @@ body {
   margin: 0;
   text-align: center;
   margin-bottom: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -637,7 +627,7 @@ body {
   min-height: 73px;
   padding-left: 78px;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -752,7 +742,7 @@ body {
   margin: 0;
   margin-bottom: 30px;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -767,7 +757,7 @@ body {
   margin: 0 auto;
   margin-bottom: 60px;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -794,7 +784,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -850,7 +840,7 @@ body {
   margin: 0;
   margin-bottom: 32px;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight:bold;
   font-size: 30px;
@@ -865,7 +855,7 @@ body {
   margin: 0 auto;
   margin-bottom: 26px;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -880,7 +870,7 @@ body {
 }
   
 .field {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -938,7 +928,7 @@ body {
 }
 
 .button-newsletter-button {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1004,7 +994,7 @@ body {
 .contacts-phone {
   width: 700px;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-style: regular;
   font-weight: normal;
   font-size: 40px;
@@ -1263,7 +1253,7 @@ body {
   width: 216px;
   height: 110px;
   margin: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1298,7 +1288,7 @@ body {
   margin: 0;
   padding: 0px;
   width: 155px;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1312,22 +1302,8 @@ body {
   position: relative;
 }
 
-.data-link-one {
-  position: absolute;
-  top: 5px;
-  left: 542px;
-  opacity: 0.3;
-}
-
-.data-link-two {
-  position: absolute;
-  top: 93px;
-  left: 542px;
-  opacity: 0.3;
-}
-
 .field-data {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1342,6 +1318,20 @@ body {
   border-radius: 4px;
   border: none;
   padding-left: 16px;
+}
+
+.data-link-one {
+  position: absolute;
+  top: 5px;
+  left: 542px;
+  opacity: 0.3;
+}
+
+.data-link-two {
+  position: absolute;
+  top: 93px;
+  left: 542px;
+  opacity: 0.3;
 }
 
 .field-data::placeholder {
@@ -1366,7 +1356,7 @@ body {
 }
 
 .data-label-one {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1378,7 +1368,7 @@ body {
 }
 
 .data-label-two {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1416,7 +1406,7 @@ body {
 .modal-title {
   margin: 0;
   margin-bottom: 60px;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -1426,7 +1416,7 @@ body {
 }
 
 .modal-text-line {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1454,7 +1444,7 @@ body {
 }
 
 .modal-button-text {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1466,7 +1456,7 @@ body {
 }
 
 .modal-search-button {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1496,7 +1486,7 @@ body {
 }
 
 .modal-search-button:active {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1531,7 +1521,7 @@ body {
   margin: 0;
   padding-left: 71px;
   padding-top: 52px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -1572,7 +1562,7 @@ body {
 }
  
 .breadcrumbs-text-link {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1653,7 +1643,7 @@ body {
 }
 
 .parametrs-filter-title {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1666,7 +1656,7 @@ body {
   margin-bottom: 35px;
   line-height: 23px;
   height: 25px;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1727,11 +1717,6 @@ body {
   box-shadow: 0 0 0 3px #83B3D3;
 }
 
-.control-input[type="radio"]:focus + .control-mark {
-  background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 0 0 3px #83B3D3;
-}
-
 .control-mark:active  { 
   background: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1744,6 +1729,11 @@ body {
   left: 4px;
   content: url("../img/сheck-vector.svg");
 }  
+
+.control-input[type="radio"]:focus + .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 3px #83B3D3;
+}
 
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
@@ -1762,7 +1752,7 @@ body {
 }
 
 .control-label {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1847,7 +1837,7 @@ body {
 }
 
 .range-input {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-size: 18px;
   line-height: 23px;
@@ -1871,7 +1861,7 @@ body {
   position: absolute;
   top: 11px;
   left: 114px;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1885,7 +1875,7 @@ body {
   position: absolute;
   top: 11px;
   left: 253px;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1981,7 +1971,7 @@ body {
   margin: 0;
   padding-top: 50px;
   margin-bottom: 42px;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -2003,7 +1993,7 @@ body {
 }
 
 .select-control {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -2079,29 +2069,28 @@ body {
 .hotels-title {
   margin: 0;
   margin-bottom: 1px;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 31px;
   color: #000000;
-  outline: none;
 }
 
 .hotels-list-link {
   cursor: pointer;
   text-decoration: none;
+  display: block;
 }
 
 .hotels-title:hover {
   color: #756257;
 }
-  
+
 .hotels-list-link:focus {
-  outline: 3px solid #83B3D3;
+  box-shadow: 0 0 0 3px #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
-  text-decoration: none;
   outline: none;
 }
 
@@ -2113,7 +2102,7 @@ body {
 
 .hotels-text {
   margin: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -2129,7 +2118,7 @@ body {
 }
 
 .rating-text {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2154,6 +2143,7 @@ body {
 }
 
 .hotels-img-block {
+  position: relative;
   margin-right: 36px;
   margin-bottom: 55px;
 }
@@ -2209,7 +2199,7 @@ body {
 }
 
 .button-blue-filter {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -2243,7 +2233,7 @@ body {
 }
 
 .button-dark-filter {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -2275,8 +2265,7 @@ body {
 }
 
 .button-blue {
-  position: relative;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -2292,11 +2281,11 @@ body {
   cursor: pointer;
   border: none;
 }
- .button-blue::before {
+ .hotels-img-block::before {
    content:url("../img/divider-2.svg");
    position: absolute;
-   top: 50px;
-   left: -383px;
+   top: 122px;
+   left: 0px;
  }
 
 .button-blue:hover {
@@ -2319,7 +2308,7 @@ body {
 
 .button-gray {
   margin-right: 8px;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -2353,7 +2342,7 @@ body {
 
 .button-green {
   position: relative;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -2368,13 +2357,6 @@ body {
   display: inline-block;
   cursor: pointer;
   border: none;
-}
-
-.button-green::before {
-  content:url("../img/divider-2.svg");
-  position: absolute;
-  top: 50px;
-  left: -383px;
 }
 
 .button-green:hover {
@@ -2395,7 +2377,7 @@ body {
 
 .newsletter-title-black {
   text-align: center;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight:bold;
   font-size: 30px;
@@ -2406,7 +2388,7 @@ body {
 
 .newsletter-text-gray {
   text-align: center;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -2415,7 +2397,7 @@ body {
 }
 
 .button-upload {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -2473,7 +2455,7 @@ body {
 .pagination-link-pagination-current {
   display: block;
   box-sizing: border-box;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -2496,7 +2478,7 @@ body {
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -2534,7 +2516,7 @@ body {
 }
 
 .pagination-link:target {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -2553,7 +2535,7 @@ body {
 }
 
 .number-text {
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -2572,7 +2554,7 @@ body {
 
 .newsletter-title-catalog {
   margin: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -2585,7 +2567,7 @@ body {
   
 .newsletter-text-catalog {
   margin: 0 auto;
-  font-family: PT Sans;
+  font-family: "PT Sans", serif;
   width: 680px;
   font-style: normal;
   font-weight: normal;
