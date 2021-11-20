@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Каталог</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
@@ -56,7 +57,7 @@
         </a>
         <div class="navigation-user">
           <div class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
+            <button class="navigation-user-link" type="button">
               <svg class="navigation-search" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#a)">
                   <path class="search-color"
@@ -70,11 +71,11 @@
                 </defs>
               </svg>
               <span class="visually-hidden">Поиск.</span>
-            </a>
+            </button>
           </div>
           <div class="navigation-user-item">
             <div class="favorite-container">
-              <a class="navigation-user-link" href="#">
+              <button class="navigation-user-link" type="button">
                 <svg class="navigation-favorite" aria-hidden="true" focusable="false" width="18" height="17"
                   viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="favorite-color"
@@ -82,16 +83,16 @@
                     fill="black" />
                 </svg>
                 <span class="visually-hidden">В избранное.</span>
-                <div class="favorite-like">
-                  <svg class="navigation-like" width="19" height="19" viewBox="0 0 19 19" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="like-color"
-                      d="M19 9.5C19 14.7467 14.7467 19 9.5 19C4.25329 19 0 14.7467 0 9.5C0 4.25329 4.25329 0 9.5 0C14.7467 0 19 4.25329 19 9.5Z"
-                      fill="#7DB54F" />
-                  </svg>
-                  <span class="like-text">12</span>
-                </div>
-              </a>
+              </button>
+              <div class="favorite-like">
+                <svg class="navigation-like" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="like-color"
+                    d="M19 9.5C19 14.7467 14.7467 19 9.5 19C4.25329 19 0 14.7467 0 9.5C0 4.25329 4.25329 0 9.5 0C14.7467 0 19 4.25329 19 9.5Z"
+                    fill="#7DB54F" />
+                </svg>
+                <span class="like-text">12</span>
+              </div>
             </div>
           </div>
           <a class="navigation-text user-link-button" href="#">Хочу сюда!</a>
@@ -226,7 +227,7 @@
             <button class="visually-hidden" type="submit" hidden>Отсортировать продукты.</button>
           </form>
           <div class="button-sorting">
-            <a href="#" class="hotels-list-toggle">
+            <button class="hotels-list-toggle" type="button">
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 0H0V6H4V0Z" fill="black" />
                 <path d="M16 0H12V6H16V0Z" fill="black" />
@@ -236,15 +237,15 @@
                 <path d="M10 8H6V14H10V8Z" fill="black" />
               </svg>
               <span class="visually-hidden">Показать карточки.</span>
-            </a>
-            <a href="#" class="hotels-list-toggle">
+            </button>
+            <button class="hotels-list-toggle" type="button">
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 12H0V14H16V12Z" fill="black" />
                 <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
               </svg>
               <span class="visually-hidden">Показать плитку.</span>
-            </a>
-            <a href="#" class="hotels-list-toggle toggle-active">
+            </button>
+            <button class="hotels-list-toggle toggle-active" type="button">
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 0H0V2H2V0Z" fill="black" />
                 <path d="M16 0H4V2H16V0Z" fill="black" />
@@ -256,7 +257,7 @@
                 <path d="M16 12H4V14H16V12Z" fill="black" />
               </svg>
               <span class="visually-hidden">Показать список.</span>
-            </a>
+            </button>
           </div>
         </div>
         <ul class="hotels-list">
